@@ -88,6 +88,18 @@
     // Log in through Parse
     [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error)
      {
+
+         if (!self.image) {
+             [self alert:@"No Photo Provided"];
+             [KVNProgress showError];
+             return;
+         }
+         else if ([self.personTextField.text isEqualToString:@""]) {
+             [self alert:@"No Name Provided"];
+             [KVNProgress showError];
+             return;
+         }
+
          if (succeeded)
          {
              //[SVProgressHUD showSuccessWithStatus:@"Welcome"];
@@ -101,26 +113,26 @@
      }];
 }
 
-#define UNWIND_SEGUE_ID @"SignInUser"
-- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
-{
-    if ([identifier isEqualToString:UNWIND_SEGUE_ID]) {
-        if (!self.image) {
-            [self alert:@"No Photo Provided"];
-            return NO;
-        }
-        else if ([self.personTextField.text isEqualToString:@""]) {
-            [self alert:@"No Name Provided"];
-            return NO;
-        }
-        else {
-            return YES;
-        }
-    }
-    else {
-        return [super shouldPerformSegueWithIdentifier:identifier sender:sender];
-    }
-}
+//#define UNWIND_SEGUE_ID @"SignInUser"
+//- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+//{
+//    if ([identifier isEqualToString:UNWIND_SEGUE_ID]) {
+//        if (!self.image) {
+//            [self alert:@"No Photo Provided"];
+//            return NO;
+//        }
+//        else if ([self.personTextField.text isEqualToString:@""]) {
+//            [self alert:@"No Name Provided"];
+//            return NO;
+//        }
+//        else {
+//            return YES;
+//        }
+//    }
+//    else {
+//        return [super shouldPerformSegueWithIdentifier:identifier sender:sender];
+//    }
+//}
 
 - (void)alert:(NSString *)msg
 {
