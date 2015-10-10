@@ -19,3 +19,7 @@ http://www.appcoda.com/ios-contacts-framework/
 Core Motion (Accelerometer): 
 
 https://developer.apple.com/library/prerelease/watchos/documentation/CoreMotion/Reference/CoreMotion_Reference/index.html#//apple_ref/doc/uid/TP40009686
+
+Watch: 
+
+http://nshipster.com/watchkit/
