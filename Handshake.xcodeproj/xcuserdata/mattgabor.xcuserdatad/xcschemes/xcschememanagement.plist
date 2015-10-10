@@ -4,16 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Complication - Handshake WatchKit App.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
-		<key>Glance - Handshake WatchKit App.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
 		<key>Handshake WatchKit App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -32,12 +22,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>88FBAD3A1BC8E7430000557F</key>
+		<key>88B6A85E1BC913DF00346558</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88FBAD4C1BC8E7430000557F</key>
+		<key>88B6A8701BC913DF00346558</key>
 		<dict>
 			<key>primary</key>
 			<true/>

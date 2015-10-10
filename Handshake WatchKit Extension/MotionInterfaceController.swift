@@ -1,8 +1,8 @@
 //
-//  GlanceController.swift
-//  Handshake WatchKit Extension
+//  MotionInterfaceController.swift
+//  Handshake
 //
-//  Created by Matthew Gabor on 10/9/15.
+//  Created by Matthew Gabor on 10/10/15.
 //  Copyright © 2015 Prodigies. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import WatchKit
 import Foundation
 
 
-class GlanceController: WKInterfaceController {
+class MotionInterfaceController: WKInterfaceController {
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)

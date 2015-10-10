@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "88FBAD3A1BC8E7430000557F"
+               BlueprintIdentifier = "88B6A85E1BC913DF00346558"
                BuildableName = "Handshake.app"
                BlueprintName = "Handshake"
                ReferencedContainer = "container:Handshake.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "88FBAD3A1BC8E7430000557F"
+            BlueprintIdentifier = "88B6A85E1BC913DF00346558"
             BuildableName = "Handshake.app"
             BlueprintName = "Handshake"
             ReferencedContainer = "container:Handshake.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "88FBAD3A1BC8E7430000557F"
+            BlueprintIdentifier = "88B6A85E1BC913DF00346558"
             BuildableName = "Handshake.app"
             BlueprintName = "Handshake"
             ReferencedContainer = "container:Handshake.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "88FBAD3A1BC8E7430000557F"
+            BlueprintIdentifier = "88B6A85E1BC913DF00346558"
             BuildableName = "Handshake.app"
             BlueprintName = "Handshake"
             ReferencedContainer = "container:Handshake.xcodeproj">

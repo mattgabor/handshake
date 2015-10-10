@@ -1,5 +1,5 @@
 //
-//  HomeInterfaceController.swift
+//  BeaconInterfaceController.swift
 //  Handshake
 //
 //  Created by Matthew Gabor on 10/10/15.
@@ -10,7 +10,7 @@ import WatchKit
 import Foundation
 
 
-class HomeInterfaceController: WKInterfaceController {
+class BeaconInterfaceController: WKInterfaceController {
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
