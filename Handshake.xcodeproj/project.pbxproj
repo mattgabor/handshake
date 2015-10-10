@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		882FA4DD1BC929E800724F90 /* AccelerometerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FA4DC1BC929E800724F90 /* AccelerometerInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
+		882FA4DD1BC929E800724F90 /* DemoAccelerometerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FA4DC1BC929E800724F90 /* DemoAccelerometerInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
 		88B6A8631BC913DF00346558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A8621BC913DF00346558 /* AppDelegate.swift */; };
 		88B6A8651BC913DF00346558 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A8641BC913DF00346558 /* HomeViewController.swift */; };
 		88B6A8681BC913DF00346558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B6A8661BC913DF00346558 /* Main.storyboard */; };
@@ -21,8 +21,6 @@
 		88B6A88A1BC913E000346558 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A8891BC913E000346558 /* ExtensionDelegate.swift */; };
 		88B6A88C1BC913E000346558 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A88B1BC913E000346558 /* NotificationController.swift */; };
 		88B6A88E1BC913E000346558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B6A88D1BC913E000346558 /* Assets.xcassets */; };
-		88B6A89E1BC9148A00346558 /* MotionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A89D1BC9148A00346558 /* MotionInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
-		88B6A8A01BC9149100346558 /* BeaconInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A89F1BC9149100346558 /* BeaconInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
 		B365161E1BC923FC00696574 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B365161D1BC923FC00696574 /* CoreLocation.framework */; };
 		B36516201BC9240400696574 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B365161F1BC9240400696574 /* CoreBluetooth.framework */; };
 		B36516221BC9244F00696574 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36516211BC9244F00696574 /* Foundation.framework */; };
@@ -74,7 +72,7 @@
 
 /* Begin PBXFileReference section */
 		472D7CDE52E13780239DD75F /* Pods_Handshake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Handshake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		882FA4DC1BC929E800724F90 /* AccelerometerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerometerInterfaceController.swift; sourceTree = "<group>"; };
+		882FA4DC1BC929E800724F90 /* DemoAccelerometerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoAccelerometerInterfaceController.swift; sourceTree = "<group>"; };
 		88B6A85F1BC913DF00346558 /* Handshake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Handshake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B6A8621BC913DF00346558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88B6A8641BC913DF00346558 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -93,8 +91,6 @@
 		88B6A88B1BC913E000346558 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		88B6A88D1BC913E000346558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88B6A88F1BC913E000346558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88B6A89D1BC9148A00346558 /* MotionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionInterfaceController.swift; sourceTree = "<group>"; };
-		88B6A89F1BC9149100346558 /* BeaconInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconInterfaceController.swift; sourceTree = "<group>"; };
 		B365161D1BC923FC00696574 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B365161F1BC9240400696574 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		B36516211BC9244F00696574 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -190,12 +186,9 @@
 		88B6A8841BC913E000346558 /* Handshake WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				882FA4DC1BC929E800724F90 /* AccelerometerInterfaceController.swift */,
 				88B6A8871BC913E000346558 /* InterfaceController.swift */,
 				88B6A8891BC913E000346558 /* ExtensionDelegate.swift */,
 				88B6A88B1BC913E000346558 /* NotificationController.swift */,
-				88B6A89D1BC9148A00346558 /* MotionInterfaceController.swift */,
-				88B6A89F1BC9149100346558 /* BeaconInterfaceController.swift */,
 				88B6A88D1BC913E000346558 /* Assets.xcassets */,
 				88B6A88F1BC913E000346558 /* Info.plist */,
 				88B6A8851BC913E000346558 /* Supporting Files */,
@@ -206,6 +199,7 @@
 		88B6A8851BC913E000346558 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				882FA4DC1BC929E800724F90 /* DemoAccelerometerInterfaceController.swift */,
 				88B6A8861BC913E000346558 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
@@ -416,10 +410,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				88B6A88C1BC913E000346558 /* NotificationController.swift in Sources */,
-				88B6A89E1BC9148A00346558 /* MotionInterfaceController.swift in Sources */,
 				88B6A88A1BC913E000346558 /* ExtensionDelegate.swift in Sources */,
-				882FA4DD1BC929E800724F90 /* AccelerometerInterfaceController.swift in Sources */,
-				88B6A8A01BC9149100346558 /* BeaconInterfaceController.swift in Sources */,
+				882FA4DD1BC929E800724F90 /* DemoAccelerometerInterfaceController.swift in Sources */,
 				88B6A8881BC913E000346558 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

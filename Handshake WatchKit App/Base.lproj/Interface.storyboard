@@ -10,11 +10,14 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Handshake_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label height="52.5" alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="0" id="BLX-lf-MGE">
-                            <string key="text">Go meet some 
-people 👫</string>
-                        </label>
+                        <label alignment="center" text="No Shake" textAlignment="center" numberOfLines="0" id="BLX-lf-MGE" userLabel="I"/>
+                        <imageView width="117" height="117" alignment="center" verticalAlignment="center" image="watchLanding" id="Z7E-nu-Gv6">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
                     </items>
+                    <connections>
+                        <outlet property="shookLabel" destination="BLX-lf-MGE" id="4A9-lc-c3e"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>

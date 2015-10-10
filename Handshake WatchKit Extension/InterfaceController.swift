@@ -13,23 +13,42 @@ import CoreMotion
 
 class InterfaceController: WKInterfaceController {
     
+    let coreyMinor = 40769
     let motionManager = CMMotionManager()
+    
+    @IBOutlet var shookLabel: WKInterfaceLabel!
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        
+        
         
         motionManager.accelerometerUpdateInterval = 0.1
         // Configure interface objects here.
     }
 
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        if (motionManager.accelerometerAvailable == true) {
+            let handler:CMAccelerometerHandler = {(data: CMAccelerometerData?, error: NSError?) -> Void in
+                let currentNumber = ((NSString(format: "%.5f", data!.acceleration.x)).doubleValue * 100)
+                if currentNumber > 0 {
+                    self.shookLabel.setText("Shook")
+                    // Look up minor in DB and prepare to present notification
+                }
+            }
+            motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.currentQueue()!, withHandler: handler)
+        }
+        else {
+            print("Accelerometer not available")
+        }
     }
-
+    
     override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+        
+        motionManager.stopAccelerometerUpdates()
     }
     
     func registerHandshake() {

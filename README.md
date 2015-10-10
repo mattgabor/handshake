@@ -23,3 +23,5 @@ https://developer.apple.com/library/prerelease/watchos/documentation/CoreMotion/
 Watch: 
 
 http://nshipster.com/watchkit/
+
+Watch orientation must be set to Right Wrist, Digital Crown on right side

@@ -24,7 +24,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Seed the random number generator
     sranddev();
     
@@ -35,6 +34,15 @@
     
     [self setupButtonBorder:self.addPhotoButton];
     
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    PFUser *currentUser = [PFUser currentUser];
+
+    if (currentUser) {
+        [self performSegueWithIdentifier:@"landingScreenToHome" sender:self];
+    }
 }
 
 #pragma mark - Configure UI
@@ -68,6 +76,11 @@
     [self presentViewController:imagePickerController animated:YES completion:NULL];
 }
 
+//- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    if ([segue.identifier isEqualToString:@"landingScreenToHome"]) {
+//        
+//    }
+//}
 
 - (IBAction)meetButtonAction:(UIButton *)sender
 {
@@ -85,6 +98,8 @@
     // 65,536 is 2^16 for the max number of the 16 bit number field
     newUser[@"minor"] = [NSNumber numberWithInt: rand() % 65536];
     
+    
+    // TODO: Check if name is already taken
     // Log in through Parse
     [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error)
      {

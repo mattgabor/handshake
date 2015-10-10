@@ -15,6 +15,7 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
 {
     // MARK: - Properties
     
+    @IBOutlet weak var userLabel: UILabel!
     /* ### iBeacon ### */
     // Will contain all the people around you, if any are around you
     var peopleNearby: [CLBeacon] = []
@@ -35,18 +36,23 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
         // Should never be nil here
         let currentUser = PFUser.currentUser()!
+        
+        userLabel.text = currentUser.username
         
         // Get the minor value from the cached user
         let minorNSNumber = currentUser["minor"] as! NSNumber
         let minor = UInt16(minorNSNumber.intValue)
         
         // Set up this phone as an ibeacon
-        phoneAsBeacon(0, minor: minor, identifier: "A handshake")
+        //phoneAsBeacon(0, minor: minor, identifier: "A handshake")
+        
+        detectOtherBeacons()
     }
     
-    override func viewDidAppear(animated: Bool)
+    override func viewWillAppear(animated: Bool)
     {
         // Dismiss progress view
         if KVNProgress.isVisible()
@@ -215,7 +221,7 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
             manager.startRangingBeaconsInRegion(region as! CLBeaconRegion)
             manager.startUpdatingLocation()
             
-            //NSLog("You entered the region")
+            NSLog("You entered the region")
             //sendLocalNotificationWithMessage("You entered the region")
     }
     
