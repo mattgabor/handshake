@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88FBAD3F1BC8E7430000557F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBAD3E1BC8E7430000557F /* AppDelegate.swift */; };
+		88FBAD411BC8E7430000557F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBAD401BC8E7430000557F /* ViewController.swift */; };
+		88FBAD441BC8E7430000557F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FBAD421BC8E7430000557F /* Main.storyboard */; };
+		88FBAD461BC8E7430000557F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88FBAD451BC8E7430000557F /* Assets.xcassets */; };
+		88FBAD491BC8E7430000557F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FBAD471BC8E7430000557F /* LaunchScreen.storyboard */; };
+		88FBAD4E1BC8E7430000557F /* Handshake WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 88FBAD4D1BC8E7430000557F /* Handshake WatchKit App.app */; };
+		88FBAD541BC8E7430000557F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FBAD521BC8E7430000557F /* Interface.storyboard */; };
+		88FBAD561BC8E7430000557F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88FBAD551BC8E7430000557F /* Assets.xcassets */; };
+		88FBAD5D1BC8E7430000557F /* Handshake WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 88FBAD5C1BC8E7430000557F /* Handshake WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		88FBAD641BC8E7430000557F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBAD631BC8E7430000557F /* InterfaceController.swift */; };
+		88FBAD661BC8E7430000557F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBAD651BC8E7430000557F /* ExtensionDelegate.swift */; };
+		88FBAD681BC8E7430000557F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBAD671BC8E7430000557F /* NotificationController.swift */; };
+		88FBAD6A1BC8E7430000557F /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBAD691BC8E7430000557F /* GlanceController.swift */; };
+		88FBAD6C1BC8E7430000557F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBAD6B1BC8E7430000557F /* ComplicationController.swift */; };
+		88FBAD6E1BC8E7430000557F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88FBAD6D1BC8E7430000557F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88FBAD4F1BC8E7430000557F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88FBAD331BC8E7430000557F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88FBAD4C1BC8E7430000557F;
+			remoteInfo = "Handshake WatchKit App";
+		};
+		88FBAD5E1BC8E7430000557F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88FBAD331BC8E7430000557F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88FBAD5B1BC8E7430000557F;
+			remoteInfo = "Handshake WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		88FBAD751BC8E7430000557F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				88FBAD5D1BC8E7430000557F /* Handshake WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88FBAD791BC8E7430000557F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				88FBAD4E1BC8E7430000557F /* Handshake WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		88FBAD3B1BC8E7430000557F /* Handshake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Handshake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88FBAD3E1BC8E7430000557F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88FBAD401BC8E7430000557F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88FBAD431BC8E7430000557F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88FBAD451BC8E7430000557F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88FBAD481BC8E7430000557F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88FBAD4A1BC8E7430000557F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88FBAD4D1BC8E7430000557F /* Handshake WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Handshake WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88FBAD531BC8E7430000557F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		88FBAD551BC8E7430000557F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88FBAD571BC8E7430000557F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88FBAD5C1BC8E7430000557F /* Handshake WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Handshake WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88FBAD621BC8E7430000557F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		88FBAD631BC8E7430000557F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		88FBAD651BC8E7430000557F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		88FBAD671BC8E7430000557F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		88FBAD691BC8E7430000557F /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		88FBAD6B1BC8E7430000557F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		88FBAD6D1BC8E7430000557F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88FBAD6F1BC8E7430000557F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88FBAD381BC8E7430000557F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88FBAD591BC8E7430000557F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88FBAD321BC8E7430000557F = {
+			isa = PBXGroup;
+			children = (
+				88FBAD3D1BC8E7430000557F /* Handshake */,
+				88FBAD511BC8E7430000557F /* Handshake WatchKit App */,
+				88FBAD601BC8E7430000557F /* Handshake WatchKit Extension */,
+				88FBAD3C1BC8E7430000557F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88FBAD3C1BC8E7430000557F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88FBAD3B1BC8E7430000557F /* Handshake.app */,
+				88FBAD4D1BC8E7430000557F /* Handshake WatchKit App.app */,
+				88FBAD5C1BC8E7430000557F /* Handshake WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88FBAD3D1BC8E7430000557F /* Handshake */ = {
+			isa = PBXGroup;
+			children = (
+				88FBAD3E1BC8E7430000557F /* AppDelegate.swift */,
+				88FBAD401BC8E7430000557F /* ViewController.swift */,
+				88FBAD421BC8E7430000557F /* Main.storyboard */,
+				88FBAD451BC8E7430000557F /* Assets.xcassets */,
+				88FBAD471BC8E7430000557F /* LaunchScreen.storyboard */,
+				88FBAD4A1BC8E7430000557F /* Info.plist */,
+			);
+			path = Handshake;
+			sourceTree = "<group>";
+		};
+		88FBAD511BC8E7430000557F /* Handshake WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				88FBAD521BC8E7430000557F /* Interface.storyboard */,
+				88FBAD551BC8E7430000557F /* Assets.xcassets */,
+				88FBAD571BC8E7430000557F /* Info.plist */,
+			);
+			path = "Handshake WatchKit App";
+			sourceTree = "<group>";
+		};
+		88FBAD601BC8E7430000557F /* Handshake WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				88FBAD631BC8E7430000557F /* InterfaceController.swift */,
+				88FBAD651BC8E7430000557F /* ExtensionDelegate.swift */,
+				88FBAD671BC8E7430000557F /* NotificationController.swift */,
+				88FBAD691BC8E7430000557F /* GlanceController.swift */,
+				88FBAD6B1BC8E7430000557F /* ComplicationController.swift */,
+				88FBAD6D1BC8E7430000557F /* Assets.xcassets */,
+				88FBAD6F1BC8E7430000557F /* Info.plist */,
+				88FBAD611BC8E7430000557F /* Supporting Files */,
+			);
+			path = "Handshake WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		88FBAD611BC8E7430000557F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88FBAD621BC8E7430000557F /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88FBAD3A1BC8E7430000557F /* Handshake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88FBAD7A1BC8E7430000557F /* Build configuration list for PBXNativeTarget "Handshake" */;
+			buildPhases = (
+				88FBAD371BC8E7430000557F /* Sources */,
+				88FBAD381BC8E7430000557F /* Frameworks */,
+				88FBAD391BC8E7430000557F /* Resources */,
+				88FBAD791BC8E7430000557F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88FBAD501BC8E7430000557F /* PBXTargetDependency */,
+			);
+			name = Handshake;
+			productName = Handshake;
+			productReference = 88FBAD3B1BC8E7430000557F /* Handshake.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88FBAD4C1BC8E7430000557F /* Handshake WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88FBAD761BC8E7430000557F /* Build configuration list for PBXNativeTarget "Handshake WatchKit App" */;
+			buildPhases = (
+				88FBAD4B1BC8E7430000557F /* Resources */,
+				88FBAD751BC8E7430000557F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88FBAD5F1BC8E7430000557F /* PBXTargetDependency */,
+			);
+			name = "Handshake WatchKit App";
+			productName = "Handshake WatchKit App";
+			productReference = 88FBAD4D1BC8E7430000557F /* Handshake WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		88FBAD5B1BC8E7430000557F /* Handshake WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88FBAD721BC8E7430000557F /* Build configuration list for PBXNativeTarget "Handshake WatchKit Extension" */;
+			buildPhases = (
+				88FBAD581BC8E7430000557F /* Sources */,
+				88FBAD591BC8E7430000557F /* Frameworks */,
+				88FBAD5A1BC8E7430000557F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Handshake WatchKit Extension";
+			productName = "Handshake WatchKit Extension";
+			productReference = 88FBAD5C1BC8E7430000557F /* Handshake WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88FBAD331BC8E7430000557F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Prodigies;
+				TargetAttributes = {
+					88FBAD3A1BC8E7430000557F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					88FBAD4C1BC8E7430000557F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					88FBAD5B1BC8E7430000557F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 88FBAD361BC8E7430000557F /* Build configuration list for PBXProject "Handshake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88FBAD321BC8E7430000557F;
+			productRefGroup = 88FBAD3C1BC8E7430000557F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88FBAD3A1BC8E7430000557F /* Handshake */,
+				88FBAD4C1BC8E7430000557F /* Handshake WatchKit App */,
+				88FBAD5B1BC8E7430000557F /* Handshake WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88FBAD391BC8E7430000557F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88FBAD491BC8E7430000557F /* LaunchScreen.storyboard in Resources */,
+				88FBAD461BC8E7430000557F /* Assets.xcassets in Resources */,
+				88FBAD441BC8E7430000557F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88FBAD4B1BC8E7430000557F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88FBAD561BC8E7430000557F /* Assets.xcassets in Resources */,
+				88FBAD541BC8E7430000557F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88FBAD5A1BC8E7430000557F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88FBAD6E1BC8E7430000557F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88FBAD371BC8E7430000557F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88FBAD411BC8E7430000557F /* ViewController.swift in Sources */,
+				88FBAD3F1BC8E7430000557F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88FBAD581BC8E7430000557F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88FBAD681BC8E7430000557F /* NotificationController.swift in Sources */,
+				88FBAD661BC8E7430000557F /* ExtensionDelegate.swift in Sources */,
+				88FBAD6C1BC8E7430000557F /* ComplicationController.swift in Sources */,
+				88FBAD641BC8E7430000557F /* InterfaceController.swift in Sources */,
+				88FBAD6A1BC8E7430000557F /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88FBAD501BC8E7430000557F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88FBAD4C1BC8E7430000557F /* Handshake WatchKit App */;
+			targetProxy = 88FBAD4F1BC8E7430000557F /* PBXContainerItemProxy */;
+		};
+		88FBAD5F1BC8E7430000557F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88FBAD5B1BC8E7430000557F /* Handshake WatchKit Extension */;
+			targetProxy = 88FBAD5E1BC8E7430000557F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88FBAD421BC8E7430000557F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88FBAD431BC8E7430000557F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88FBAD471BC8E7430000557F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88FBAD481BC8E7430000557F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		88FBAD521BC8E7430000557F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88FBAD531BC8E7430000557F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88FBAD701BC8E7430000557F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88FBAD711BC8E7430000557F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88FBAD731BC8E7430000557F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Handshake WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Prodigies.Handshake.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		88FBAD741BC8E7430000557F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Handshake WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Prodigies.Handshake.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		88FBAD771BC8E7430000557F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Handshake_WatchKit_Extension;
+				INFOPLIST_FILE = "Handshake WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Prodigies.Handshake.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		88FBAD781BC8E7430000557F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Handshake_WatchKit_Extension;
+				INFOPLIST_FILE = "Handshake WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Prodigies.Handshake.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		88FBAD7B1BC8E7430000557F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Handshake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Prodigies.Handshake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		88FBAD7C1BC8E7430000557F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Handshake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Prodigies.Handshake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88FBAD361BC8E7430000557F /* Build configuration list for PBXProject "Handshake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88FBAD701BC8E7430000557F /* Debug */,
+				88FBAD711BC8E7430000557F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88FBAD721BC8E7430000557F /* Build configuration list for PBXNativeTarget "Handshake WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88FBAD731BC8E7430000557F /* Debug */,
+				88FBAD741BC8E7430000557F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88FBAD761BC8E7430000557F /* Build configuration list for PBXNativeTarget "Handshake WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88FBAD771BC8E7430000557F /* Debug */,
+				88FBAD781BC8E7430000557F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88FBAD7A1BC8E7430000557F /* Build configuration list for PBXNativeTarget "Handshake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88FBAD7B1BC8E7430000557F /* Debug */,
+				88FBAD7C1BC8E7430000557F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88FBAD331BC8E7430000557F /* Project object */;
+}
