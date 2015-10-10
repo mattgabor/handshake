@@ -109,6 +109,10 @@
             [self alert:@"No Photo Provided"];
             return NO;
         }
+        else if ([self.personTextField.text isEqualToString:@""]) {
+            [self alert:@"No Name Provided"];
+            return NO;
+        }
         else {
             return YES;
         }
@@ -120,7 +124,7 @@
 
 - (void)alert:(NSString *)msg
 {
-    [[[UIAlertView alloc] initWithTitle:@"Add Card"
+    [[[UIAlertView alloc] initWithTitle:@"Sign Up"
                                 message:msg
                                delegate:nil
                       cancelButtonTitle:nil
