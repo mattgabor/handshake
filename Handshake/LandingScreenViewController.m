@@ -8,6 +8,7 @@
 
 #import "LandingScreenViewController.h"
 #import <MobileCoreServices/MobileCoreServices.h>
+#import "chooseImageSourceViewController.h"
 
 
 @interface LandingScreenViewController () <UITextFieldDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
@@ -38,11 +39,12 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    PFUser *currentUser = [PFUser currentUser];
 
-    if (currentUser) {
-        [self performSegueWithIdentifier:@"landingScreenToHome" sender:self];
-    }
+//    PFUser *currentUser = [PFUser currentUser];
+//
+//    if (currentUser) {
+//        [self performSegueWithIdentifier:@"landingScreenToHome" sender:self];
+//    }
 }
 
 #pragma mark - Configure UI
@@ -65,22 +67,21 @@
 }
 
 #pragma mark - Actions
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"chooseSourceSegue"]) {
+        chooseImageSourceViewController *destVC = (chooseImageSourceViewController *)[segue destinationViewController];
+        destVC.parent = self;
+    }
+}
 
 - (IBAction)addPhotoButtonAction:(UIButton *)sender
 {
-    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
-    imagePickerController.delegate = self;
-    imagePickerController.mediaTypes = @[(NSString *)kUTTypeImage];
-    imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera; /*|UIImagePickerControllerSourceTypePhotoLibrary;*/
-    imagePickerController.allowsEditing = YES;
-    [self presentViewController:imagePickerController animated:YES completion:NULL];
+    self.imagePickerController = [[UIImagePickerController alloc] init];
+    self.imagePickerController.delegate = self;
+    self.imagePickerController.mediaTypes = @[(NSString *)kUTTypeImage];
+    self.imagePickerController.allowsEditing = YES;
 }
-
-//- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    if ([segue.identifier isEqualToString:@"landingScreenToHome"]) {
-//        
-//    }
-//}
 
 - (IBAction)meetButtonAction:(UIButton *)sender
 {
@@ -176,4 +177,6 @@
     [self.addPhotoButton setBackgroundImage:self.image forState:UIControlStateNormal];
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
+
+-(IBAction)prepareForUnwind:(UIStoryboardSegue *)segue {}
 @end

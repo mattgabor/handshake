@@ -25,3 +25,7 @@ Watch:
 http://nshipster.com/watchkit/
 
 Watch orientation must be set to Right Wrist, Digital Crown on right side
+
+Camera:
+
+http://www.appcoda.com/ios-programming-camera-iphone-app/
