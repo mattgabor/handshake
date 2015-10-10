@@ -101,6 +101,32 @@
      }];
 }
 
+#define UNWIND_SEGUE_ID @"SignInUser"
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    if ([identifier isEqualToString:UNWIND_SEGUE_ID]) {
+        if (!self.image) {
+            [self alert:@"No Photo Provided"];
+            return NO;
+        }
+        else {
+            return YES;
+        }
+    }
+    else {
+        return [super shouldPerformSegueWithIdentifier:identifier sender:sender];
+    }
+}
+
+- (void)alert:(NSString *)msg
+{
+    [[[UIAlertView alloc] initWithTitle:@"Add Card"
+                                message:msg
+                               delegate:nil
+                      cancelButtonTitle:nil
+                      otherButtonTitles:@"OK", nil] show];
+}
+
 #pragma mark - UIImagePickerControllerDelegate
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
