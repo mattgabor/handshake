@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,106 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8Ss-gb-pJ8">
+                                <rect key="frame" x="20" y="266" width="560" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nSa-nB-96o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="nSa-nB-96o"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKV-Bl-QrN">
+                                <rect key="frame" x="20" y="28" width="560" height="230"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="LtL-Px-Zln"/>
+                                    <constraint firstAttribute="height" constant="149" id="nxB-4n-KEB"/>
+                                    <constraint firstAttribute="width" secondItem="KKV-Bl-QrN" secondAttribute="height" multiplier="1:1" id="oyJ-PN-9dY"/>
+                                </constraints>
+                                <state key="normal" title="Choose Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LtL-Px-Zln"/>
+                                        <exclude reference="nxB-4n-KEB"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="addPhotoButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gk9-8E-gx9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JR0-pA-Snk">
+                                <rect key="frame" x="20" y="304" width="560" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Go Meet Beaches!"/>
+                                <connections>
+                                    <action selector="meetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OdO-kG-NE0"/>
+                                    <segue destination="wok-js-gOd" kind="show" identifier="User Signed In Segue" id="gOS-zj-dLr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Ss-gb-pJ8" firstAttribute="leading" secondItem="KKV-Bl-QrN" secondAttribute="leading" id="3NF-jV-VkD"/>
+                            <constraint firstItem="8Ss-gb-pJ8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6gQ-wX-c8P"/>
+                            <constraint firstItem="KKV-Bl-QrN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9Jq-y4-7Se"/>
+                            <constraint firstItem="KKV-Bl-QrN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="BgR-rH-0I9"/>
+                            <constraint firstItem="JR0-pA-Snk" firstAttribute="trailing" secondItem="8Ss-gb-pJ8" secondAttribute="trailing" id="WDY-sH-uvm"/>
+                            <constraint firstItem="JR0-pA-Snk" firstAttribute="leading" secondItem="8Ss-gb-pJ8" secondAttribute="leading" id="l0o-li-Emv"/>
+                            <constraint firstItem="8Ss-gb-pJ8" firstAttribute="top" secondItem="KKV-Bl-QrN" secondAttribute="bottom" constant="8" symbolic="YES" id="udf-Ll-cLS"/>
+                            <constraint firstItem="8Ss-gb-pJ8" firstAttribute="trailing" secondItem="KKV-Bl-QrN" secondAttribute="trailing" id="yfc-EP-dzg"/>
+                            <constraint firstItem="JR0-pA-Snk" firstAttribute="top" secondItem="8Ss-gb-pJ8" secondAttribute="bottom" constant="8" symbolic="YES" id="zpN-VQ-CGX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addPhotoButton" destination="KKV-Bl-QrN" id="Kye-5b-ZFk"/>
+                        <outlet property="personTextField" destination="8Ss-gb-pJ8" id="bqy-wA-IZr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="288" y="334"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ie0-n6-QvP">
+            <objects>
+                <viewController id="wok-js-gOd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ey1-u1-TfI"/>
+                        <viewControllerLayoutGuide type="bottom" id="BvX-xb-pe5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nSQ-KQ-gjv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go meet peeps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1E-hv-M3k">
+                                <rect key="frame" x="242" y="289" width="117" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U1E-hv-M3k" firstAttribute="centerX" secondItem="nSQ-KQ-gjv" secondAttribute="centerX" id="SmM-HV-JRk"/>
+                            <constraint firstItem="U1E-hv-M3k" firstAttribute="centerY" secondItem="nSQ-KQ-gjv" secondAttribute="centerY" id="tsI-zF-xPn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoV-4m-X6K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957" y="334"/>
         </scene>
     </scenes>
 </document>

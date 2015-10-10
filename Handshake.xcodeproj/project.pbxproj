@@ -22,6 +22,10 @@
 		88B6A88E1BC913E000346558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B6A88D1BC913E000346558 /* Assets.xcassets */; };
 		88B6A89E1BC9148A00346558 /* MotionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A89D1BC9148A00346558 /* MotionInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
 		88B6A8A01BC9149100346558 /* BeaconInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A89F1BC9149100346558 /* BeaconInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
+		B365161E1BC923FC00696574 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B365161D1BC923FC00696574 /* CoreLocation.framework */; };
+		B36516201BC9240400696574 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B365161F1BC9240400696574 /* CoreBluetooth.framework */; };
+		B36516221BC9244F00696574 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36516211BC9244F00696574 /* Foundation.framework */; };
+		B36516261BC9273500696574 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36516251BC9273500696574 /* ProfileViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +91,12 @@
 		88B6A88F1BC913E000346558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88B6A89D1BC9148A00346558 /* MotionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionInterfaceController.swift; sourceTree = "<group>"; };
 		88B6A89F1BC9149100346558 /* BeaconInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconInterfaceController.swift; sourceTree = "<group>"; };
+		B365161D1BC923FC00696574 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B365161F1BC9240400696574 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		B36516211BC9244F00696574 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B36516231BC9273500696574 /* Handshake-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Handshake-Bridging-Header.h"; sourceTree = "<group>"; };
+		B36516241BC9273500696574 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		B36516251BC9273500696574 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36516221BC9244F00696574 /* Foundation.framework in Frameworks */,
+				B36516201BC9240400696574 /* CoreBluetooth.framework in Frameworks */,
+				B365161E1BC923FC00696574 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +123,9 @@
 		88B6A8561BC913DF00346558 = {
 			isa = PBXGroup;
 			children = (
+				B36516211BC9244F00696574 /* Foundation.framework */,
+				B365161F1BC9240400696574 /* CoreBluetooth.framework */,
+				B365161D1BC923FC00696574 /* CoreLocation.framework */,
 				88B6A8611BC913DF00346558 /* Handshake */,
 				88B6A8751BC913DF00346558 /* Handshake WatchKit App */,
 				88B6A8841BC913E000346558 /* Handshake WatchKit Extension */,
@@ -132,10 +148,13 @@
 			children = (
 				88B6A8621BC913DF00346558 /* AppDelegate.swift */,
 				88B6A8641BC913DF00346558 /* ViewController.swift */,
+				B36516241BC9273500696574 /* ProfileViewController.h */,
+				B36516251BC9273500696574 /* ProfileViewController.m */,
 				88B6A8661BC913DF00346558 /* Main.storyboard */,
 				88B6A8691BC913DF00346558 /* Assets.xcassets */,
 				88B6A86B1BC913DF00346558 /* LaunchScreen.storyboard */,
 				88B6A86E1BC913DF00346558 /* Info.plist */,
+				B36516231BC9273500696574 /* Handshake-Bridging-Header.h */,
 			);
 			path = Handshake;
 			sourceTree = "<group>";
@@ -235,6 +254,7 @@
 		88B6A8571BC913DF00346558 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Prodigies;
 				TargetAttributes = {
@@ -305,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88B6A8651BC913DF00346558 /* ViewController.swift in Sources */,
+				B36516261BC9273500696574 /* ProfileViewController.m in Sources */,
 				88B6A8631BC913DF00346558 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,11 +532,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Handshake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Prodigies.Handshake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Handshake/Handshake-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -523,11 +547,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Handshake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Prodigies.Handshake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Handshake/Handshake-Bridging-Header.h";
 			};
 			name = Release;
 		};
