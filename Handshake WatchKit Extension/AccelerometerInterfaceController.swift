@@ -31,9 +31,10 @@ class AccelerometerInterfaceController: WKInterfaceController {
 
         if (motionManager.accelerometerAvailable == true) {
             let handler:CMAccelerometerHandler = {(data: CMAccelerometerData?, error: NSError?) -> Void in
-                self.labelX.setText(String(format: "%.2f", data!.acceleration.x))
-                self.labelY.setText(String(format: "%.2f", data!.acceleration.y))
-                self.labelZ.setText(String(format: "%.2f", data!.acceleration.z))
+                print("x: \(data!.acceleration.x)\ny: \(data!.acceleration.y)\nz: \(data!.acceleration.z)")
+//                self.labelX.setText(String(format: "%.2f", data!.acceleration.x))
+//                self.labelY.setText(String(format: "%.2f", data!.acceleration.y))
+//                self.labelZ.setText(String(format: "%.2f", data!.acceleration.z))
             }
             motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.currentQueue()!, withHandler: handler)
         }
