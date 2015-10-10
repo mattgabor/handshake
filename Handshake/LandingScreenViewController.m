@@ -1,0 +1,122 @@
+//
+//  LandingScreenViewController.m
+//  Handshake
+//
+//  Created by Shai Bruhis on 10/10/15.
+//  Copyright © 2015 Prodigies. All rights reserved.
+//
+
+#import "LandingScreenViewController.h"
+#import <MobileCoreServices/MobileCoreServices.h>
+
+
+@interface LandingScreenViewController () <UITextFieldDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *personTextField;
+@property (weak, nonatomic) IBOutlet UIButton *addPhotoButton;
+@property (strong, nonatomic) UIImage *image;
+
+@end
+
+@implementation LandingScreenViewController
+
+#pragma mark - Lifecycle Methods
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    // Seed the random number generator
+    sranddev();
+    
+    // Do any additional setup after loading the view.
+    self.personTextField.delegate = self;
+    self.personTextField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+    self.personTextField.returnKeyType = UIReturnKeyDone;
+    
+    [self setupButtonBorder:self.addPhotoButton];
+    
+}
+
+#pragma mark - Configure UI
+
+- (void)setupButtonBorder:(UIButton *)button
+{
+    button.layer.cornerRadius = button.bounds.size.height/2;
+    button.layer.borderWidth = 1;
+    button.layer.borderColor = [UIColor grayColor].CGColor;
+    button.clipsToBounds = YES;
+}
+
+#pragma mark - UITextFieldDelegate
+
+// hides keyboard when clicking "Done" in keyboard
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+#pragma mark - Actions
+
+- (IBAction)addPhotoButtonAction:(UIButton *)sender
+{
+    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    imagePickerController.delegate = self;
+    imagePickerController.mediaTypes = @[(NSString *)kUTTypeImage];
+    imagePickerController.sourceType = /*UIImagePickerControllerSourceTypeCamera |*/ UIImagePickerControllerSourceTypePhotoLibrary;
+    imagePickerController.allowsEditing = YES;
+    [self presentViewController:imagePickerController animated:YES completion:NULL];
+}
+
+
+- (IBAction)meetButtonAction:(UIButton *)sender
+{
+    // Display loading animation
+    [KVNProgress show];
+    //[SVProgressHUD show];
+    
+    // Set up new user on Parse
+    PFUser *newUser = [PFUser user];
+    
+    newUser.username = self.personTextField.text;
+    
+    newUser.password = @"None";
+    
+    // 65,536 is 2^16 for the max number of the 16 bit number field
+    newUser[@"minor"] = [NSNumber numberWithInt: rand() % 65536];
+    
+    // Log in through Parse
+    [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error)
+     {
+         if (succeeded)
+         {
+             //[SVProgressHUD showSuccessWithStatus:@"Welcome"];
+             [KVNProgress showSuccess];
+             [self performSegueWithIdentifier:@"SignInUser" sender:self];
+         }
+         else
+         {
+             NSLog(@"ERROR:::: %@",error.description);
+         }
+     }];
+}
+
+#pragma mark - UIImagePickerControllerDelegate
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    self.image = info[UIImagePickerControllerEditedImage];
+    if (!self.image)
+    {
+        self.image = info[UIImagePickerControllerOriginalImage];
+    }
+    [self.addPhotoButton setTitle:@"" forState:UIControlStateNormal];
+    [self.addPhotoButton setBackgroundImage:self.image forState:UIControlStateNormal];
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+@end

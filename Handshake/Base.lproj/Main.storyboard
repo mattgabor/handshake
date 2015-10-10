@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Profile View Controller-->
+        <!--Landing Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ProfileViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LandingScreenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -59,7 +59,6 @@
                                 <state key="normal" title="Go Meet Beaches!"/>
                                 <connections>
                                     <action selector="meetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OdO-kG-NE0"/>
-                                    <segue destination="wok-js-gOd" kind="show" identifier="User Signed In Segue" id="gOS-zj-dLr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,16 +79,17 @@
                     <connections>
                         <outlet property="addPhotoButton" destination="KKV-Bl-QrN" id="Kye-5b-ZFk"/>
                         <outlet property="personTextField" destination="8Ss-gb-pJ8" id="bqy-wA-IZr"/>
+                        <segue destination="wok-js-gOd" kind="show" identifier="SignInUser" id="Qs2-SF-EIZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="288" y="334"/>
+            <point key="canvasLocation" x="207" y="334"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="ie0-n6-QvP">
             <objects>
-                <viewController id="wok-js-gOd" sceneMemberID="viewController">
+                <viewController id="wok-js-gOd" customClass="HomeViewController" customModule="Handshake" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ey1-u1-TfI"/>
                         <viewControllerLayoutGuide type="bottom" id="BvX-xb-pe5"/>

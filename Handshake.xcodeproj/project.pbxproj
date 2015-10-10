@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		882FA4DD1BC929E800724F90 /* AccelerometerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FA4DC1BC929E800724F90 /* AccelerometerInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
 		88B6A8631BC913DF00346558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A8621BC913DF00346558 /* AppDelegate.swift */; };
-		88B6A8651BC913DF00346558 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A8641BC913DF00346558 /* ViewController.swift */; };
+		88B6A8651BC913DF00346558 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A8641BC913DF00346558 /* HomeViewController.swift */; };
 		88B6A8681BC913DF00346558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B6A8661BC913DF00346558 /* Main.storyboard */; };
 		88B6A86A1BC913DF00346558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B6A8691BC913DF00346558 /* Assets.xcassets */; };
 		88B6A86D1BC913DF00346558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B6A86B1BC913DF00346558 /* LaunchScreen.storyboard */; };
@@ -26,7 +26,8 @@
 		B365161E1BC923FC00696574 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B365161D1BC923FC00696574 /* CoreLocation.framework */; };
 		B36516201BC9240400696574 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B365161F1BC9240400696574 /* CoreBluetooth.framework */; };
 		B36516221BC9244F00696574 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36516211BC9244F00696574 /* Foundation.framework */; };
-		B36516261BC9273500696574 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36516251BC9273500696574 /* ProfileViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B36516261BC9273500696574 /* LandingScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36516251BC9273500696574 /* LandingScreenViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B4FE0785F1C51FB58CA45ABD /* Pods_Handshake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472D7CDE52E13780239DD75F /* Pods_Handshake.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,10 +73,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		472D7CDE52E13780239DD75F /* Pods_Handshake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Handshake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		882FA4DC1BC929E800724F90 /* AccelerometerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerometerInterfaceController.swift; sourceTree = "<group>"; };
 		88B6A85F1BC913DF00346558 /* Handshake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Handshake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B6A8621BC913DF00346558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88B6A8641BC913DF00346558 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88B6A8641BC913DF00346558 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		88B6A8671BC913DF00346558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88B6A8691BC913DF00346558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88B6A86C1BC913DF00346558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,9 +98,11 @@
 		B365161D1BC923FC00696574 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B365161F1BC9240400696574 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		B36516211BC9244F00696574 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B36516231BC9273500696574 /* Handshake-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Handshake-Bridging-Header.h"; sourceTree = "<group>"; };
-		B36516241BC9273500696574 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
-		B36516251BC9273500696574 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		B36516241BC9273500696574 /* LandingScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingScreenViewController.h; sourceTree = "<group>"; };
+		B36516251BC9273500696574 /* LandingScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingScreenViewController.m; sourceTree = "<group>"; };
+		B36516271BC939BC00696574 /* Handshake-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Handshake-Bridging-Header.h"; sourceTree = "<group>"; };
+		BD2468CA263107992DC1192D /* Pods-Handshake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Handshake.release.xcconfig"; path = "Pods/Target Support Files/Pods-Handshake/Pods-Handshake.release.xcconfig"; sourceTree = "<group>"; };
+		F8423C9D30BEDE92DB097558 /* Pods-Handshake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Handshake.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Handshake/Pods-Handshake.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 				B36516221BC9244F00696574 /* Foundation.framework in Frameworks */,
 				B36516201BC9240400696574 /* CoreBluetooth.framework in Frameworks */,
 				B365161E1BC923FC00696574 /* CoreLocation.framework in Frameworks */,
+				B4FE0785F1C51FB58CA45ABD /* Pods_Handshake.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +127,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C755D8DABFB6E9E1CD61A0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8423C9D30BEDE92DB097558 /* Pods-Handshake.debug.xcconfig */,
+				BD2468CA263107992DC1192D /* Pods-Handshake.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		88B6A8561BC913DF00346558 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +146,8 @@
 				88B6A8751BC913DF00346558 /* Handshake WatchKit App */,
 				88B6A8841BC913E000346558 /* Handshake WatchKit Extension */,
 				88B6A8601BC913DF00346558 /* Products */,
+				3C755D8DABFB6E9E1CD61A0B /* Pods */,
+				AA5EB605320BEB9485DF96C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,14 +165,14 @@
 			isa = PBXGroup;
 			children = (
 				88B6A8621BC913DF00346558 /* AppDelegate.swift */,
-				88B6A8641BC913DF00346558 /* ViewController.swift */,
-				B36516241BC9273500696574 /* ProfileViewController.h */,
-				B36516251BC9273500696574 /* ProfileViewController.m */,
+				B36516271BC939BC00696574 /* Handshake-Bridging-Header.h */,
+				88B6A8641BC913DF00346558 /* HomeViewController.swift */,
+				B36516241BC9273500696574 /* LandingScreenViewController.h */,
+				B36516251BC9273500696574 /* LandingScreenViewController.m */,
 				88B6A8661BC913DF00346558 /* Main.storyboard */,
 				88B6A8691BC913DF00346558 /* Assets.xcassets */,
 				88B6A86B1BC913DF00346558 /* LaunchScreen.storyboard */,
 				88B6A86E1BC913DF00346558 /* Info.plist */,
-				B36516231BC9273500696574 /* Handshake-Bridging-Header.h */,
 			);
 			path = Handshake;
 			sourceTree = "<group>";
@@ -195,6 +211,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AA5EB605320BEB9485DF96C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				472D7CDE52E13780239DD75F /* Pods_Handshake.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,10 +226,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88B6A89A1BC913E000346558 /* Build configuration list for PBXNativeTarget "Handshake" */;
 			buildPhases = (
+				26CB09EB79831ABDDB0BA508 /* Check Pods Manifest.lock */,
 				88B6A85B1BC913DF00346558 /* Sources */,
 				88B6A85C1BC913DF00346558 /* Frameworks */,
 				88B6A85D1BC913DF00346558 /* Resources */,
 				88B6A8991BC913E000346558 /* Embed Watch Content */,
+				AC2D8F1205400F7560870FBF /* Embed Pods Frameworks */,
+				FBFF9E9B3C53AF41341A95FD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,12 +290,15 @@
 				TargetAttributes = {
 					88B6A85E1BC913DF00346558 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 37AZ3YZ57L;
 					};
 					88B6A8701BC913DF00346558 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = SVFLC63M2X;
 					};
 					88B6A87F1BC913E000346558 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = SVFLC63M2X;
 					};
 				};
 			};
@@ -322,13 +352,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26CB09EB79831ABDDB0BA508 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC2D8F1205400F7560870FBF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Handshake/Pods-Handshake-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBFF9E9B3C53AF41341A95FD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Handshake/Pods-Handshake-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		88B6A85B1BC913DF00346558 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88B6A8651BC913DF00346558 /* ViewController.swift in Sources */,
-				B36516261BC9273500696574 /* ProfileViewController.m in Sources */,
+				88B6A8651BC913DF00346558 /* HomeViewController.swift in Sources */,
+				B36516261BC9273500696574 /* LandingScreenViewController.m in Sources */,
 				88B6A8631BC913DF00346558 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,10 +553,13 @@
 		88B6A8931BC913E000346558 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Handshake WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Prodigies.Handshake.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -489,10 +570,13 @@
 		88B6A8941BC913E000346558 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Handshake WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Prodigies.Handshake.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -504,11 +588,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Handshake_WatchKit_Extension;
 				INFOPLIST_FILE = "Handshake WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = Prodigies.Handshake.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -520,11 +607,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Handshake_WatchKit_Extension;
 				INFOPLIST_FILE = "Handshake WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = Prodigies.Handshake.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -534,14 +624,18 @@
 		};
 		88B6A89B1BC913E000346558 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8423C9D30BEDE92DB097558 /* Pods-Handshake.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Handshake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Prodigies.Handshake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Handshake/Handshake-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -549,14 +643,18 @@
 		};
 		88B6A89C1BC913E000346558 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD2468CA263107992DC1192D /* Pods-Handshake.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Handshake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Prodigies.Handshake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Handshake/Handshake-Bridging-Header.h";
 			};
 			name = Release;

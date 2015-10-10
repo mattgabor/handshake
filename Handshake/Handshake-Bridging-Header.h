@@ -1,4 +1,20 @@
 //
-//  Use this file to import your target's public headers that you would like to expose to Swift.
+//  Handshake-Bridging-Header.h
+//  Handshake
+//
+//  Created by Shai Bruhis on 10/10/15.
+//  Copyright © 2015 Prodigies. All rights reserved.
 //
 
+#ifndef Handshake_Bridging_Header_h
+#define Handshake_Bridging_Header_h
+
+// Parse
+//#import <Parse/Parse.h>
+//
+//// Custom Progess View
+//#import <KVNProgress/KVNProgress.h>
+//#import <SVProgressHUD/SVProgressHUD.h>
+
+
+#endif /* Handshake_Bridging_Header_h */
