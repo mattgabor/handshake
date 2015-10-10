@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		882FA4DD1BC929E800724F90 /* AccelerometerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FA4DC1BC929E800724F90 /* AccelerometerInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
 		88B6A8631BC913DF00346558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A8621BC913DF00346558 /* AppDelegate.swift */; };
 		88B6A8651BC913DF00346558 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A8641BC913DF00346558 /* ViewController.swift */; };
 		88B6A8681BC913DF00346558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B6A8661BC913DF00346558 /* Main.storyboard */; };
@@ -71,6 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		882FA4DC1BC929E800724F90 /* AccelerometerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerometerInterfaceController.swift; sourceTree = "<group>"; };
 		88B6A85F1BC913DF00346558 /* Handshake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Handshake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B6A8621BC913DF00346558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88B6A8641BC913DF00346558 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		88B6A8841BC913E000346558 /* Handshake WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				882FA4DC1BC929E800724F90 /* AccelerometerInterfaceController.swift */,
 				88B6A8871BC913E000346558 /* InterfaceController.swift */,
 				88B6A8891BC913E000346558 /* ExtensionDelegate.swift */,
 				88B6A88B1BC913E000346558 /* NotificationController.swift */,
@@ -337,6 +340,7 @@
 				88B6A88C1BC913E000346558 /* NotificationController.swift in Sources */,
 				88B6A89E1BC9148A00346558 /* MotionInterfaceController.swift in Sources */,
 				88B6A88A1BC913E000346558 /* ExtensionDelegate.swift in Sources */,
+				882FA4DD1BC929E800724F90 /* AccelerometerInterfaceController.swift in Sources */,
 				88B6A8A01BC9149100346558 /* BeaconInterfaceController.swift in Sources */,
 				88B6A8881BC913E000346558 /* InterfaceController.swift in Sources */,
 			);

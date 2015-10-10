@@ -8,13 +8,17 @@
 
 import WatchKit
 import Foundation
+import CoreMotion
 
 
 class InterfaceController: WKInterfaceController {
-
+    
+    let motionManager = CMMotionManager()
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
+        motionManager.accelerometerUpdateInterval = 0.1
         // Configure interface objects here.
     }
 
@@ -26,6 +30,10 @@ class InterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    func registerHandshake() {
+        
     }
 
 }

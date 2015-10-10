@@ -24,7 +24,8 @@ people 👫</string>
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <label alignment="center" text="Shaker's Name" textAlignment="center" id="IdU-wH-bcW"/>
+                        <imageView alignment="left" id="sbl-sQ-Iuu"/>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
