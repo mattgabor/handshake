@@ -8,7 +8,11 @@
         <!--Motion Interface Controller-->
         <scene sceneID="wgQ-o9-XnT">
             <objects>
-                <controller hidesWhenLoading="NO" id="pTU-1M-DFE" customClass="MotionInterfaceController" customModule="Handshake"/>
+                <controller hidesWhenLoading="NO" id="pTU-1M-DFE" customClass="MotionInterfaceController" customModule="Handshake">
+                    <items>
+                        <label height="50.5" alignment="center" verticalAlignment="center" text="Go meet some people 👫" textAlignment="center" numberOfLines="0" id="BYV-3q-8ll"/>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="287" y="324"/>
         </scene>
