@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B22c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Landing Screen View Controller-->
@@ -18,27 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8Ss-gb-pJ8">
-                                <rect key="frame" x="20" y="266" width="560" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKV-Bl-QrN">
+                                <rect key="frame" x="20" y="30" width="560" height="290"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="nSa-nB-96o"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="nSa-nB-96o"/>
-                                    </mask>
-                                </variation>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKV-Bl-QrN">
-                                <rect key="frame" x="20" y="28" width="560" height="230"/>
-                                <animations/>
-                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="2mU-rO-EVo"/>
                                     <constraint firstAttribute="height" constant="230" id="LtL-Px-Zln"/>
                                     <constraint firstAttribute="height" constant="149" id="nxB-4n-KEB"/>
-                                    <constraint firstAttribute="width" secondItem="KKV-Bl-QrN" secondAttribute="height" multiplier="1:1" id="oyJ-PN-9dY"/>
                                 </constraints>
                                 <state key="normal" title="Choose Image">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -53,28 +37,52 @@
                                     <action selector="addPhotoButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gk9-8E-gx9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JR0-pA-Snk">
-                                <rect key="frame" x="20" y="304" width="560" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JR0-pA-Snk">
+                                <rect key="frame" x="20" y="370" width="560" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Go Meet Beaches!"/>
+                                <state key="normal" title="Begin"/>
                                 <connections>
                                     <action selector="meetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OdO-kG-NE0"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8Ss-gb-pJ8">
+                                <rect key="frame" x="20" y="330" width="560" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nSa-nB-96o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="nSa-nB-96o"/>
+                                    </mask>
+                                </variation>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="8Ss-gb-pJ8" firstAttribute="leading" secondItem="KKV-Bl-QrN" secondAttribute="leading" id="3NF-jV-VkD"/>
-                            <constraint firstItem="8Ss-gb-pJ8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6gQ-wX-c8P"/>
-                            <constraint firstItem="KKV-Bl-QrN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9Jq-y4-7Se"/>
-                            <constraint firstItem="KKV-Bl-QrN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="BgR-rH-0I9"/>
-                            <constraint firstItem="JR0-pA-Snk" firstAttribute="trailing" secondItem="8Ss-gb-pJ8" secondAttribute="trailing" id="WDY-sH-uvm"/>
-                            <constraint firstItem="JR0-pA-Snk" firstAttribute="leading" secondItem="8Ss-gb-pJ8" secondAttribute="leading" id="l0o-li-Emv"/>
-                            <constraint firstItem="8Ss-gb-pJ8" firstAttribute="top" secondItem="KKV-Bl-QrN" secondAttribute="bottom" constant="8" symbolic="YES" id="udf-Ll-cLS"/>
-                            <constraint firstItem="8Ss-gb-pJ8" firstAttribute="trailing" secondItem="KKV-Bl-QrN" secondAttribute="trailing" id="yfc-EP-dzg"/>
-                            <constraint firstItem="JR0-pA-Snk" firstAttribute="top" secondItem="8Ss-gb-pJ8" secondAttribute="bottom" constant="8" symbolic="YES" id="zpN-VQ-CGX"/>
+                            <constraint firstItem="8Ss-gb-pJ8" firstAttribute="top" secondItem="KKV-Bl-QrN" secondAttribute="bottom" constant="10" id="3D7-WZ-y9A"/>
+                            <constraint firstItem="JR0-pA-Snk" firstAttribute="top" secondItem="8Ss-gb-pJ8" secondAttribute="bottom" constant="10" id="EPy-3m-IZQ"/>
+                            <constraint firstItem="KKV-Bl-QrN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="KeE-iY-qfp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JR0-pA-Snk" secondAttribute="bottom" constant="200" id="Ms1-uS-htt"/>
+                            <constraint firstItem="JR0-pA-Snk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="RTS-Nj-lVZ"/>
+                            <constraint firstAttribute="trailing" secondItem="8Ss-gb-pJ8" secondAttribute="trailing" constant="20" id="UfG-Oo-OKF"/>
+                            <constraint firstAttribute="trailing" secondItem="KKV-Bl-QrN" secondAttribute="trailing" constant="20" id="dev-8d-nNS"/>
+                            <constraint firstItem="8Ss-gb-pJ8" firstAttribute="top" secondItem="KKV-Bl-QrN" secondAttribute="bottom" constant="10" id="fOl-1L-2pk"/>
+                            <constraint firstItem="8Ss-gb-pJ8" firstAttribute="top" secondItem="KKV-Bl-QrN" secondAttribute="bottom" constant="10" id="iuT-MJ-T84"/>
+                            <constraint firstItem="KKV-Bl-QrN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="jMH-Ef-6z1"/>
+                            <constraint firstAttribute="trailing" secondItem="JR0-pA-Snk" secondAttribute="trailing" constant="20" id="nQ2-wT-Xkk"/>
+                            <constraint firstItem="8Ss-gb-pJ8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="sFj-nf-eCo"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3D7-WZ-y9A"/>
+                                <exclude reference="fOl-1L-2pk"/>
+                                <exclude reference="Ms1-uS-htt"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="addPhotoButton" destination="KKV-Bl-QrN" id="Kye-5b-ZFk"/>

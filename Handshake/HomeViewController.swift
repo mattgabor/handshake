@@ -130,7 +130,7 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
             //NSLog("didRangeBeacons");
             //var message:String = ""
             
-            //println("Beacons count: \(beacons.count)")
+            print("Beacons count: \(beacons.count)")
             
             if(beacons.count > 0)
             {
