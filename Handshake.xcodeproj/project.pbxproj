@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88B6A8061BC9093B00346558 /* HomeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A8051BC9093B00346558 /* HomeInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
+		88B6A8081BC9095700346558 /* BeaconInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A8071BC9095700346558 /* BeaconInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
+		88B6A80A1BC9096500346558 /* MotionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A8091BC9096500346558 /* MotionInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
+		88B6A80C1BC909D500346558 /* BeaconStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B6A80B1BC909D500346558 /* BeaconStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		88B6A80E1BC909DE00346558 /* MotionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B6A80D1BC909DE00346558 /* MotionStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
 		88FBAD3F1BC8E7430000557F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBAD3E1BC8E7430000557F /* AppDelegate.swift */; };
 		88FBAD411BC8E7430000557F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBAD401BC8E7430000557F /* ViewController.swift */; };
 		88FBAD441BC8E7430000557F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FBAD421BC8E7430000557F /* Main.storyboard */; };
@@ -67,6 +72,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		88B6A8051BC9093B00346558 /* HomeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeInterfaceController.swift; path = ../Handshake/Views/HomeInterfaceController.swift; sourceTree = "<group>"; };
+		88B6A8071BC9095700346558 /* BeaconInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconInterfaceController.swift; sourceTree = "<group>"; };
+		88B6A8091BC9096500346558 /* MotionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionInterfaceController.swift; sourceTree = "<group>"; };
+		88B6A80B1BC909D500346558 /* BeaconStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BeaconStoryboard.storyboard; sourceTree = "<group>"; };
+		88B6A80D1BC909DE00346558 /* MotionStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MotionStoryboard.storyboard; sourceTree = "<group>"; };
 		88FBAD3B1BC8E7430000557F /* Handshake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Handshake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FBAD3E1BC8E7430000557F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88FBAD401BC8E7430000557F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,7 +153,12 @@
 		88FBAD511BC8E7430000557F /* Handshake WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				88B6A8051BC9093B00346558 /* HomeInterfaceController.swift */,
 				88FBAD521BC8E7430000557F /* Interface.storyboard */,
+				88B6A8071BC9095700346558 /* BeaconInterfaceController.swift */,
+				88B6A80B1BC909D500346558 /* BeaconStoryboard.storyboard */,
+				88B6A8091BC9096500346558 /* MotionInterfaceController.swift */,
+				88B6A80D1BC909DE00346558 /* MotionStoryboard.storyboard */,
 				88FBAD551BC8E7430000557F /* Assets.xcassets */,
 				88FBAD571BC8E7430000557F /* Info.plist */,
 			);
@@ -285,7 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				88FBAD561BC8E7430000557F /* Assets.xcassets in Resources */,
+				88B6A80E1BC909DE00346558 /* MotionStoryboard.storyboard in Resources */,
 				88FBAD541BC8E7430000557F /* Interface.storyboard in Resources */,
+				88B6A80C1BC909D500346558 /* BeaconStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +322,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				88FBAD411BC8E7430000557F /* ViewController.swift in Sources */,
+				88B6A8061BC9093B00346558 /* HomeInterfaceController.swift in Sources */,
 				88FBAD3F1BC8E7430000557F /* AppDelegate.swift in Sources */,
+				88B6A8081BC9095700346558 /* BeaconInterfaceController.swift in Sources */,
+				88B6A80A1BC9096500346558 /* MotionInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +570,7 @@
 				88FBAD741BC8E7430000557F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88FBAD761BC8E7430000557F /* Build configuration list for PBXNativeTarget "Handshake WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +579,7 @@
 				88FBAD781BC8E7430000557F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88FBAD7A1BC8E7430000557F /* Build configuration list for PBXNativeTarget "Handshake" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +588,7 @@
 				88FBAD7C1BC8E7430000557F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
