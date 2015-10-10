@@ -13,4 +13,8 @@ http://www.raywenderlich.com/115695/getting-started-with-core-data-tutorial
 
 Contacts:
 
+https://developer.apple.com/library/ios/documentation/ContactData/Conceptual/AddressBookProgrammingGuideforiPhone/Chapters/DirectInteraction.html#//apple_ref/doc/uid/TP40007744-CH6-SW1
+http://www.appcoda.com/ios-contacts-framework/
+
+
 
