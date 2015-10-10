@@ -16,5 +16,6 @@ Contacts:
 https://developer.apple.com/library/ios/documentation/ContactData/Conceptual/AddressBookProgrammingGuideforiPhone/Chapters/DirectInteraction.html#//apple_ref/doc/uid/TP40007744-CH6-SW1
 http://www.appcoda.com/ios-contacts-framework/
 
+Core Motion (Accelerometer): 
 
-
+https://developer.apple.com/library/prerelease/watchos/documentation/CoreMotion/Reference/CoreMotion_Reference/index.html#//apple_ref/doc/uid/TP40009686
