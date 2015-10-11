@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		882FA4DD1BC929E800724F90 /* DemoAccelerometerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FA4DC1BC929E800724F90 /* DemoAccelerometerInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
-		88A1EE2E1BC9C99F0088CC91 /* chooseImageSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A1EE2D1BC9C99F0088CC91 /* chooseImageSourceViewController.m */; settings = {ASSET_TAGS = (); }; };
 		88B6A8631BC913DF00346558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A8621BC913DF00346558 /* AppDelegate.swift */; };
 		88B6A8651BC913DF00346558 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6A8641BC913DF00346558 /* HomeViewController.swift */; };
 		88B6A8681BC913DF00346558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B6A8661BC913DF00346558 /* Main.storyboard */; };
@@ -74,8 +73,6 @@
 /* Begin PBXFileReference section */
 		472D7CDE52E13780239DD75F /* Pods_Handshake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Handshake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		882FA4DC1BC929E800724F90 /* DemoAccelerometerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoAccelerometerInterfaceController.swift; sourceTree = "<group>"; };
-		88A1EE2C1BC9C99F0088CC91 /* chooseImageSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chooseImageSourceViewController.h; sourceTree = "<group>"; };
-		88A1EE2D1BC9C99F0088CC91 /* chooseImageSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chooseImageSourceViewController.m; sourceTree = "<group>"; };
 		88B6A85F1BC913DF00346558 /* Handshake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Handshake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B6A8621BC913DF00346558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88B6A8641BC913DF00346558 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -168,8 +165,6 @@
 				88B6A8641BC913DF00346558 /* HomeViewController.swift */,
 				B36516241BC9273500696574 /* LandingScreenViewController.h */,
 				B36516251BC9273500696574 /* LandingScreenViewController.m */,
-				88A1EE2C1BC9C99F0088CC91 /* chooseImageSourceViewController.h */,
-				88A1EE2D1BC9C99F0088CC91 /* chooseImageSourceViewController.m */,
 				88B6A8661BC913DF00346558 /* Main.storyboard */,
 				88B6A8691BC913DF00346558 /* Assets.xcassets */,
 				88B6A86B1BC913DF00346558 /* LaunchScreen.storyboard */,
@@ -404,7 +399,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88A1EE2E1BC9C99F0088CC91 /* chooseImageSourceViewController.m in Sources */,
 				88B6A8651BC913DF00346558 /* HomeViewController.swift in Sources */,
 				B36516261BC9273500696574 /* LandingScreenViewController.m in Sources */,
 				88B6A8631BC913DF00346558 /* AppDelegate.swift in Sources */,

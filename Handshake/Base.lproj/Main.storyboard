@@ -2,66 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Choose Image Source View Controller-->
-        <scene sceneID="eGz-Sz-cfR">
-            <objects>
-                <viewController id="oI8-Wk-Gxl" customClass="chooseImageSourceViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4E9-df-Zhm"/>
-                        <viewControllerLayoutGuide type="bottom" id="dxJ-Rz-5ot"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kNv-fr-kdA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RA-0a-DfA">
-                                <rect key="frame" x="20" y="542" width="560" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Cancel"/>
-                                <connections>
-                                    <segue destination="WOv-u4-fUR" kind="unwind" identifier="Unwind From Image Source" unwindAction="prepareForUnwind:" id="2Oc-xP-umH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaa-aZ-R4d">
-                                <rect key="frame" x="20" y="504" width="560" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Take Photo"/>
-                                <connections>
-                                    <action selector="chooseSourceAction:" destination="oI8-Wk-Gxl" eventType="touchUpInside" id="Kp9-qf-hvM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qL-eg-sRB">
-                                <rect key="frame" x="20" y="474" width="560" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Choose Photo"/>
-                                <connections>
-                                    <action selector="chooseSourceAction:" destination="oI8-Wk-Gxl" eventType="touchUpInside" id="ejV-QN-PSE"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="3qL-eg-sRB" firstAttribute="trailing" secondItem="kNv-fr-kdA" secondAttribute="trailingMargin" id="5oR-SB-pRF"/>
-                            <constraint firstItem="3qL-eg-sRB" firstAttribute="trailing" secondItem="jaa-aZ-R4d" secondAttribute="trailing" id="LC7-a8-lAr"/>
-                            <constraint firstItem="3qL-eg-sRB" firstAttribute="leading" secondItem="2RA-0a-DfA" secondAttribute="leading" id="Wdh-ev-nEr"/>
-                            <constraint firstItem="3qL-eg-sRB" firstAttribute="leading" secondItem="kNv-fr-kdA" secondAttribute="leadingMargin" id="aSA-XP-M0U"/>
-                            <constraint firstItem="2RA-0a-DfA" firstAttribute="top" secondItem="jaa-aZ-R4d" secondAttribute="bottom" constant="8" symbolic="YES" id="beI-3J-TN4"/>
-                            <constraint firstItem="3qL-eg-sRB" firstAttribute="leading" secondItem="jaa-aZ-R4d" secondAttribute="leading" id="gGo-D1-Mb6"/>
-                            <constraint firstItem="jaa-aZ-R4d" firstAttribute="top" secondItem="3qL-eg-sRB" secondAttribute="bottom" id="pmB-fr-9r4"/>
-                            <constraint firstItem="3qL-eg-sRB" firstAttribute="top" secondItem="4E9-df-Zhm" secondAttribute="bottom" constant="454" id="pvh-bm-T1C"/>
-                            <constraint firstItem="3qL-eg-sRB" firstAttribute="trailing" secondItem="2RA-0a-DfA" secondAttribute="trailing" id="tuP-0W-auh"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w0i-aV-hKz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="WOv-u4-fUR" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="957" y="-361"/>
-        </scene>
         <!--Landing Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -116,7 +58,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="addPhotoButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gk9-8E-gx9"/>
-                                    <segue destination="oI8-Wk-Gxl" kind="presentation" identifier="chooseSourceSegue" id="SH8-on-xwx"/>
                                 </connections>
                             </button>
                         </subviews>
