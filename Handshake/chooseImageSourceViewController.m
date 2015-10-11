@@ -43,8 +43,20 @@
     else if ([sender.titleLabel.text isEqualToString:@"Choose Photo"]) {
         self.parent.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     }
-    [self dismissViewControllerAnimated:YES completion:NULL];
+    [self presentViewController:self.parent.imagePickerController animated:YES completion:NULL];
 }
+
+#define UNWIND_SEGUE_ID @"Unwind From Image Source"
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    if ([identifier isEqualToString:UNWIND_SEGUE_ID]) {
+        return YES;
+    }
+    else {
+        return [super shouldPerformSegueWithIdentifier:identifier sender:sender];
+    }
+}
+
 
 
 

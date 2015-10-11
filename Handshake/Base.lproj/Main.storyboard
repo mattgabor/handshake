@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B22c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Choose Image Source View Controller-->
@@ -16,23 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RA-0a-DfA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RA-0a-DfA">
                                 <rect key="frame" x="20" y="550" width="560" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
-                                    <segue destination="WOv-u4-fUR" kind="unwind" unwindAction="prepareForUnwind:" id="2Oc-xP-umH"/>
+                                    <segue destination="WOv-u4-fUR" kind="unwind" identifier="Unwind From Image Source" unwindAction="prepareForUnwind:" id="2Oc-xP-umH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaa-aZ-R4d">
-                                <rect key="frame" x="20" y="512" width="560" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Choose Photo"/>
-                                <connections>
-                                    <action selector="chooseSourceAction:" destination="oI8-Wk-Gxl" eventType="touchUpInside" id="ejV-QN-PSE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qL-eg-sRB">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qL-eg-sRB">
                                 <rect key="frame" x="20" y="474" width="560" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Take Photo"/>
@@ -40,11 +33,27 @@
                                     <action selector="chooseSourceAction:" destination="oI8-Wk-Gxl" eventType="touchUpInside" id="Kp9-qf-hvM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaa-aZ-R4d">
+                                <rect key="frame" x="20" y="504" width="560" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Choose Photo"/>
+                                <connections>
+                                    <action selector="chooseSourceAction:" destination="oI8-Wk-Gxl" eventType="touchUpInside" id="ejV-QN-PSE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2RA-0a-DfA" firstAttribute="leading" secondItem="jaa-aZ-R4d" secondAttribute="leading" id="0Ei-2z-OPz"/>
+                            <constraint firstItem="2RA-0a-DfA" firstAttribute="leading" secondItem="3qL-eg-sRB" secondAttribute="leading" id="73U-Md-qfZ"/>
+                            <constraint firstItem="2RA-0a-DfA" firstAttribute="leading" secondItem="kNv-fr-kdA" secondAttribute="leadingMargin" id="84N-sR-AKc"/>
+                            <constraint firstItem="2RA-0a-DfA" firstAttribute="trailing" secondItem="jaa-aZ-R4d" secondAttribute="trailing" id="WNB-c3-R4t"/>
+                            <constraint firstAttribute="bottom" secondItem="2RA-0a-DfA" secondAttribute="bottom" constant="20" symbolic="YES" id="bBd-VX-C4y"/>
+                            <constraint firstItem="2RA-0a-DfA" firstAttribute="top" secondItem="jaa-aZ-R4d" secondAttribute="bottom" constant="8" symbolic="YES" id="bac-sM-9CP"/>
+                            <constraint firstItem="2RA-0a-DfA" firstAttribute="trailing" secondItem="kNv-fr-kdA" secondAttribute="trailingMargin" id="hpn-TO-P3z"/>
                             <constraint firstItem="jaa-aZ-R4d" firstAttribute="top" secondItem="3qL-eg-sRB" secondAttribute="bottom" id="pmB-fr-9r4"/>
+                            <constraint firstItem="2RA-0a-DfA" firstAttribute="trailing" secondItem="3qL-eg-sRB" secondAttribute="trailing" id="prA-EB-bkA"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -106,7 +115,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="addPhotoButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gk9-8E-gx9"/>
-                                    <segue destination="oI8-Wk-Gxl" kind="presentation" id="SH8-on-xwx"/>
+                                    <segue destination="oI8-Wk-Gxl" kind="presentation" identifier="chooseSourceSegue" id="SH8-on-xwx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -157,8 +166,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1E-hv-M3k">
-                                <rect key="frame" x="256" y="289.5" width="88" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1E-hv-M3k">
+                                <rect key="frame" x="256" y="290" width="88" height="20"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -182,6 +191,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Qs2-SF-EIZ"/>
+        <segue reference="Fl8-Qg-n7x"/>
     </inferredMetricsTieBreakers>
 </document>

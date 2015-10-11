@@ -70,7 +70,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"chooseSourceSegue"]) {
-        chooseImageSourceViewController *destVC = (chooseImageSourceViewController *)[segue destinationViewController];
+        chooseImageSourceViewController *destVC = (chooseImageSourceViewController *)segue.destinationViewController;
         destVC.parent = self;
     }
 }
@@ -129,27 +129,6 @@
      }];
 }
 
-//#define UNWIND_SEGUE_ID @"SignInUser"
-//- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
-//{
-//    if ([identifier isEqualToString:UNWIND_SEGUE_ID]) {
-//        if (!self.image) {
-//            [self alert:@"No Photo Provided"];
-//            return NO;
-//        }
-//        else if ([self.personTextField.text isEqualToString:@""]) {
-//            [self alert:@"No Name Provided"];
-//            return NO;
-//        }
-//        else {
-//            return YES;
-//        }
-//    }
-//    else {
-//        return [super shouldPerformSegueWithIdentifier:identifier sender:sender];
-//    }
-//}
-
 - (void)alert:(NSString *)msg
 {
     [[[UIAlertView alloc] initWithTitle:@"Sign Up"
@@ -160,6 +139,17 @@
 }
 
 #pragma mark - UIImagePickerControllerDelegate
+
+#define UNWIND_SEGUE_ID @"Unwind From Image Source"
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    if ([identifier isEqualToString:UNWIND_SEGUE_ID]) {
+        return YES;
+    }
+    else {
+        return [super shouldPerformSegueWithIdentifier:identifier sender:sender];
+    }
+}
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
@@ -179,4 +169,5 @@
 }
 
 -(IBAction)prepareForUnwind:(UIStoryboardSegue *)segue {}
+
 @end
