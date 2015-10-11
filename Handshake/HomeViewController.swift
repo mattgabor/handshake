@@ -184,7 +184,7 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
                         {
                             let shakerName = object["name"] as! String*/
                             //print("You are nearby \(shakerName)!!!")
-                            self.sendLocalNotificationWithMessage("You are nearby someone with minor: \(nearestBeacon.minor.intValue)!!!")
+                            //self.sendLocalNotificationWithMessage("You are nearby someone with minor: \(nearestBeacon.minor.intValue)!!!")
                 /*
                         }
                     }

@@ -8,6 +8,7 @@
 
 #import "LandingScreenViewController.h"
 #import <MobileCoreServices/MobileCoreServices.h>
+#import "Handshake-Swift.h"
 
 
 
@@ -25,6 +26,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    if ([PFUser currentUser])
+    {
+        //[self performSegueWithIdentifier:@"LandingScreenToHome" sender:self];
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        UIViewController *homeVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"HomeViewController"];
+        
+        //(([AppDelegate class])[[[UIApplication sharedApplication] delegate]]);
+    }
+    
     // Seed the random number generator
     sranddev();
     
@@ -37,15 +49,6 @@
     
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-
-    PFUser *currentUser = [PFUser currentUser];
-
-    if (currentUser) {
-        [self performSegueWithIdentifier:@"LandingScreenToHome" sender:self];
-    }
-}
 
 #pragma mark - Configure UI
 
