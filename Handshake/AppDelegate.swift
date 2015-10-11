@@ -64,6 +64,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
     }
     
     func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        /// REPLACE THIS WITH YO PARSE CODEZ MOTHA LICKA
+        
         print(__FUNCTION__)
         guard message["request"] as? String == "fireLocalNotification" else {return}
         
@@ -73,6 +75,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         localNotification.soundName = UILocalNotificationDefaultSoundName;
         
         UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+
     }
 
 }

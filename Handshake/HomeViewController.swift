@@ -261,9 +261,6 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
     }
     
     // MARK: - Message Passing/Receiving To Watch
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
-        
-    }
     
     func sendShakerDataToWatch() {
         

@@ -21,6 +21,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     override func willActivate() {
         super.willActivate()
         
+        // DO NOT RESET
         if (motionManager.accelerometerAvailable == true) {
             let handler:CMAccelerometerHandler = {(data: CMAccelerometerData?, error: NSError?) -> Void in
                 let currentNumber = ((NSString(format: "%.5f", data!.acceleration.x)).doubleValue * 100)
@@ -35,11 +36,12 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
                             print(error.localizedDescription)
                     }
                     self.pushSent = true
-                } else if currentNumber > 60 && self.pushSent {
-                    print(currentNumber)
-                    print("resetting push")
-                    self.pushSent = false
                 }
+//                } else if currentNumber > 60 && self.pushSent {
+//                    print(currentNumber)
+//                    print("resetting push")
+//                    self.pushSent = false
+//                }
             }
             motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.currentQueue()!, withHandler: handler)
         }
@@ -86,8 +88,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
             preferredStyle: WKAlertControllerStyle.Alert,
             actions: actions)
     }
-    func registerHandshake() {
-        
+    @IBAction func reset() {
+        self.pushSent = false
     }
-
 }
