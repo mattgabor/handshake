@@ -15,5 +15,6 @@
 
 // out
 //@property (nonatomic, strong) UIImagePickerControllerSourceType sourceType;
+@property (strong, nonatomic) UIImage *image;
 
 @end

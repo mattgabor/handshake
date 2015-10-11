@@ -8,10 +8,14 @@
 
 #import "chooseImageSourceViewController.h"
 #import "LandingScreenViewController.h"
+#import <MobileCoreServices/MobileCoreServices.h>
 
-@interface chooseImageSourceViewController ()
+
+@interface chooseImageSourceViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 //@property (nonatomic, readwrite) UIImagePickerControllerSourceType sourceType;
+@property (strong, nonatomic) UIImagePickerController *imagePickerController;
+
 
 @end
 
@@ -37,13 +41,34 @@
 }
 */
 - (IBAction)chooseSourceAction:(UIButton *)sender {
+    self.imagePickerController = [[UIImagePickerController alloc] init];
+    self.imagePickerController.delegate = self;
+    self.imagePickerController.mediaTypes = @[(NSString *)kUTTypeImage];
+    self.imagePickerController.allowsEditing = YES;
     if ([sender.titleLabel.text isEqualToString:@"Take Photo"]) {
-        self.parent.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+        self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
     }
     else if ([sender.titleLabel.text isEqualToString:@"Choose Photo"]) {
-        self.parent.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     }
-    [self presentViewController:self.parent.imagePickerController animated:YES completion:NULL];
+    [self presentViewController:self.imagePickerController animated:YES completion:NULL];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    self.image = info[UIImagePickerControllerEditedImage];
+    if (!self.image)
+    {
+        self.image = info[UIImagePickerControllerOriginalImage];
+    }
+//    [self.addPhotoButton setTitle:@"" forState:UIControlStateNormal];
+//    [self.addPhotoButton setBackgroundImage:self.image forState:UIControlStateNormal];
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 #define UNWIND_SEGUE_ID @"Unwind From Image Source"

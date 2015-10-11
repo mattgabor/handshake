@@ -14,6 +14,6 @@
 @interface LandingScreenViewController : UIViewController
 
 @property (nonatomic, strong) NSString *name;
-@property (strong, nonatomic) UIImagePickerController *imagePickerController;
+//@property (strong, nonatomic) UIImagePickerController *imagePickerController;
 
 @end

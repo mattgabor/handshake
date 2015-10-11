@@ -7,11 +7,10 @@
 //
 
 #import "LandingScreenViewController.h"
-#import <MobileCoreServices/MobileCoreServices.h>
 #import "chooseImageSourceViewController.h"
 
 
-@interface LandingScreenViewController () <UITextFieldDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface LandingScreenViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *personTextField;
 @property (weak, nonatomic) IBOutlet UIButton *addPhotoButton;
@@ -77,10 +76,10 @@
 
 - (IBAction)addPhotoButtonAction:(UIButton *)sender
 {
-    self.imagePickerController = [[UIImagePickerController alloc] init];
-    self.imagePickerController.delegate = self;
-    self.imagePickerController.mediaTypes = @[(NSString *)kUTTypeImage];
-    self.imagePickerController.allowsEditing = YES;
+//    self.imagePickerController = [[UIImagePickerController alloc] init];
+//    self.imagePickerController.delegate = self;
+//    self.imagePickerController.mediaTypes = @[(NSString *)kUTTypeImage];
+//    self.imagePickerController.allowsEditing = YES;
 }
 
 - (IBAction)meetButtonAction:(UIButton *)sender
@@ -152,22 +151,7 @@
     }
 }
 
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
-{
-    [self dismissViewControllerAnimated:YES completion:NULL];
-}
 
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    self.image = info[UIImagePickerControllerEditedImage];
-    if (!self.image)
-    {
-        self.image = info[UIImagePickerControllerOriginalImage];
-    }
-    [self.addPhotoButton setTitle:@"" forState:UIControlStateNormal];
-    [self.addPhotoButton setBackgroundImage:self.image forState:UIControlStateNormal];
-    [self dismissViewControllerAnimated:YES completion:NULL];
-}
 
 -(IBAction)prepareForUnwind:(UIStoryboardSegue *)segue {}
 
