@@ -12,7 +12,7 @@ import CoreBluetooth
 import KVNProgress
 import WatchConnectivity
 
-class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocationManagerDelegate
+class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocationManagerDelegate, WCSessionDelegate
 {
     // MARK: - Properties
     
@@ -49,6 +49,12 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
         
         // Set up this phone as an ibeacon
         phoneAsBeacon(0, minor: minor, identifier: "A handshake")
+        
+        if (WCSession.isSupported()) {
+            let session = WCSession.defaultSession()
+            session.delegate = self // conforms to WCSessionDelegate
+            session.activateSession()
+        }
     }
     
     override func viewWillAppear(animated: Bool)
@@ -164,6 +170,8 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
                     ids.append(beacon.minor)
                 }
                 
+                // FIXME: Only run following code if handshake detected
+                
                 let query = PFQuery(className: "_User")
                 
                 query.whereKey("minor", containedIn: ids)
@@ -213,6 +221,10 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
             
             //NSLog("%@", message)
             //sendLocalNotificationWithMessage(message)
+    }
+    
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        
     }
     
     func locationManager(manager: CLLocationManager,

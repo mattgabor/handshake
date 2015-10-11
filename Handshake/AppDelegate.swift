@@ -11,7 +11,7 @@ import Parse
 import WatchConnectivity
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     var window: UIWindow?
 
@@ -20,6 +20,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         Parse.setApplicationId("BZgVVYapIDNl3kVbOg0nY7UgHs8wfGGjGavd2zL6", clientKey: "qp6o8o0uoffnmEfkFFS3YLUexHEX9gNmmkpUDHq5")
         // Override point for customization after application launch.
+        
+        let settings = UIUserNotificationSettings(
+            forTypes: [.Badge, .Sound, .Alert],
+            categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        
+        if (WCSession.isSupported()) {
+            let session = WCSession.defaultSession()
+            session.delegate = self // conforms to WCSessionDelegate
+            session.activateSession()
+        }
+        
         return true
     }
 
@@ -56,7 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         guard message["request"] as? String == "fireLocalNotification" else {return}
         
         let localNotification = UILocalNotification()
-        localNotification.alertBody = "Message Received!"
+        localNotification.alertBody = "Handshake Executed"
         localNotification.fireDate = NSDate()
         localNotification.soundName = UILocalNotificationDefaultSoundName;
         
