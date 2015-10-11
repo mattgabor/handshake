@@ -16,9 +16,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     let coreyMinor = 40769
     let motionManager = CMMotionManager()
     var pushSent = false
-    
-    // MARK: - Accelerometer Code
-    
+
     // MARK: - Accelerometer Code
     override func willActivate() {
         super.willActivate()
@@ -26,10 +24,10 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         if (motionManager.accelerometerAvailable == true) {
             let handler:CMAccelerometerHandler = {(data: CMAccelerometerData?, error: NSError?) -> Void in
                 let currentNumber = ((NSString(format: "%.5f", data!.acceleration.x)).doubleValue * 100)
-                if currentNumber < 0 && !self.pushSent {
-                    
+                if currentNumber < 10 && !self.pushSent {
                     // Send notification to watch to look up minor from Parse
-                    print("sending push notification to iPhone")
+                    print(currentNumber)
+                    print("sending push")
                     let message = ["request": "fireLocalNotification"]
                     WCSession.defaultSession().sendMessage(
                         message, replyHandler: { (replyMessage) -> Void in
@@ -37,7 +35,9 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
                             print(error.localizedDescription)
                     }
                     self.pushSent = true
-                } else if currentNumber > 60 {
+                } else if currentNumber > 60 && self.pushSent {
+                    print(currentNumber)
+                    print("resetting push")
                     self.pushSent = false
                 }
             }
@@ -47,38 +47,6 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
             print("Accelerometer not available")
         }
     }
-//    override func willActivate() {
-//        super.willActivate()
-//        
-//        if (motionManager.accelerometerAvailable == true) {
-//            let handler:CMAccelerometerHandler = {(data: CMAccelerometerData?, error: NSError?) -> Void in
-//                let currentNumber = ((NSString(format: "%.5f", data!.acceleration.x)).doubleValue * 100)
-//                
-//                if currentNumber < 0 && !self.pushSent {
-//                    self.readHandshake(currentNumber)
-//                } else if currentNumber > 60 {
-//                    self.pushSent = false
-//                }
-//                // on 60 trigger reset, 0 trigger initial read.
-//            }
-//            motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.currentQueue()!, withHandler: handler)
-//        }
-//        else {
-//            print("Accelerometer not available")
-//        }
-//    }
-    
-//    func readHandshake(currentNumber: Double) {
-//        // Send notification to watch to look up minor from Parse
-//        print("sending push notification to iPhone")
-//        let message = ["request": "fireLocalNotification"]
-//        WCSession.defaultSession().sendMessage(
-//            message, replyHandler: { (replyMessage) -> Void in
-//            }) { (error) -> Void in
-//                print(error.localizedDescription)
-//        }
-//        self.pushSent = true
-//    }
     
     override func didDeactivate() {
         super.didDeactivate()

@@ -284,15 +284,15 @@
 				TargetAttributes = {
 					88B6A85E1BC913DF00346558 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = SVFLC63M2X;
+						DevelopmentTeam = 29USK5L42E;
 					};
 					88B6A8701BC913DF00346558 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = SVFLC63M2X;
+						DevelopmentTeam = 29USK5L42E;
 					};
 					88B6A87F1BC913E000346558 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = SVFLC63M2X;
+						DevelopmentTeam = 29USK5L42E;
 					};
 				};
 			};
