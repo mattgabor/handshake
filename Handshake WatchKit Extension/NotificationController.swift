@@ -38,6 +38,10 @@ class NotificationController: WKUserNotificationInterfaceController {
         // This method is called when a local notification needs to be presented.
         // Implement it if you use a dynamic notification interface.
         // Populate your dynamic notification interface as quickly as possible.
+        let shakerData = localNotification.userInfo!
+        self.shakerImage.setImage((shakerData["image"] as! UIImage))
+        self.shakerName.setText(shakerData["name"] as? String)
+        
         print("\(localNotification)")
         
         

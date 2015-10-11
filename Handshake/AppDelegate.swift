@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 import WatchConnectivity
+import SDWebImage
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
@@ -79,8 +80,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
     func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void)
     {
         // Tell the home view controller to query for the data
+        print(__FUNCTION__)
+        guard message["request"] as? String == "fireLocalNotification" else {return}
+        
+        let query = PFQuery(className: "_User")
+        
+        print("Querying parse for shaker")
+        
+        homeVC.userLabel.text = "About to send local notification"
+        
+        query.whereKey("minor", equalTo: homeVC.nearestBeacon.minor)
+        
+        query.getFirstObjectInBackgroundWithBlock
+        {
+                (object: PFObject?, error: NSError?) -> Void in
+                if  error == nil
+                {
+                    let shakerName = (object! as! PFUser).username!
+                    
+                    print("Shaker's name is \(shakerName)")
+                    let shakerPicURL = NSURL(string: (object!["imageAsPFFile"] as! PFFile).url!)
+                    
+                    let manager = SDWebImageManager.sharedManager()
+                    
+                    manager.downloadImageWithURL(shakerPicURL, options: [], progress: nil)
+                    {
+                            (image: UIImage?, error: NSError?, cacheType: SDImageCacheType, finished: Bool, imageURL: NSURL?) -> Void in
+                            // --- Send data to watch once request completes ---
+                            //let imageAsData = UIImageJPEGRepresentation(image!, 0.5)!
+                            self.homeVC.nameWithImageDictionary = ["name" : shakerName, "image" : image!]
+                            self.homeVC.haveFormattedDictionary = true
+                            self.homeVC.userLabel.text = "Query completed"
+                    }
+                }
+                else
+                {
+                    print("Error query for minor value on line \(__LINE__) with error: \(error!.description)")
+                }
+        }
+
+        
+        let localNotification = UILocalNotification()
+        localNotification.alertBody = "Handshake Executed"
+        localNotification.fireDate = NSDate()
+        localNotification.soundName = UILocalNotificationDefaultSoundName;
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+        
         self.homeVC.queryParseForShaker()
     }
-
 }
 
