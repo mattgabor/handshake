@@ -18,6 +18,9 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="resetButton" destination="amX-Ae-yET" id="Qwh-rm-JKP"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="338"/>

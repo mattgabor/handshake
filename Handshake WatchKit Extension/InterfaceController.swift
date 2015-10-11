@@ -13,9 +13,9 @@ import WatchConnectivity
 
 class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
-    let coreyMinor = 40769
     let motionManager = CMMotionManager()
     var pushSent = false
+    @IBOutlet var resetButton: WKInterfaceButton!
 
     // MARK: - Accelerometer Code
     override func willActivate() {
@@ -88,7 +88,11 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
             preferredStyle: WKAlertControllerStyle.Alert,
             actions: actions)
     }
-    @IBAction func reset() {
+    
+    // MARK: - Actions
+    
+    @IBAction func reset()
+    {
         self.pushSent = false
     }
 }

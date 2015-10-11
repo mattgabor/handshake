@@ -14,8 +14,8 @@ import WatchConnectivity
 class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     var window: UIWindow?
-
-
+    var homeVC = HomeViewController()
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
         Parse.enableLocalDatastore()
@@ -76,19 +76,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         print("reachable:\(session.reachable)")
     }
     
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
-        /// REPLACE THIS WITH YO PARSE CODEZ MOTHA LICKA
-        
-        print(__FUNCTION__)
-        guard message["request"] as? String == "fireLocalNotification" else {return}
-        
-        let localNotification = UILocalNotification()
-        localNotification.alertBody = "Handshake Executed"
-        localNotification.fireDate = NSDate()
-        localNotification.soundName = UILocalNotificationDefaultSoundName;
-        
-        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
-
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void)
+    {
+        // Tell the home view controller to query for the data
+        self.homeVC.queryParseForShaker()
     }
 
 }
