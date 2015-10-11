@@ -34,7 +34,17 @@
         
         UIViewController *homeVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"HomeViewController"];
         
-        //(([AppDelegate class])[[[UIApplication sharedApplication] delegate]]);
+        if ([PFUser currentUser])
+        {
+            //[self performSegueWithIdentifier:@"LandingScreenToHome" sender:self];
+            UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            
+            UIViewController *homeVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"HomeViewController"];
+            
+            AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+            
+            appDelegate.window.rootViewController = homeVC;
+        }
     }
     
     // Seed the random number generator
@@ -137,6 +147,11 @@
     // 65,536 is 2^16 for the max number of the 16 bit number field
     newUser[@"minor"] = [NSNumber numberWithInt: rand() % 65536];
     
+    NSData *fileAsData = UIImageJPEGRepresentation(self.image, 0.5)
+    
+    PFFile *imageFile = [PFFile fileWithData:fileAsData!];
+    
+    newUser["imageAsPFFile"] = imageFile;
     
     // TODO: Check if name is already taken
     // Log in through Parse
