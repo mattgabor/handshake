@@ -1,0 +1,443 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Bolts.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "BFCancellationToken.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Bolts/Bolts/Common/BFCancellationToken.h"
+        },
+        {
+          'type': 'file',
+          'name': "BFCancellationTokenRegistration.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Bolts/Bolts/Common/BFCancellationTokenRegistration.h"
+        },
+        {
+          'type': 'file',
+          'name': "BFCancellationTokenSource.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
+        },
+        {
+          'type': 'file',
+          'name': "BFDefines.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Bolts/Bolts/Common/BFDefines.h"
+        },
+        {
+          'type': 'file',
+          'name': "BFExecutor.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Bolts/Bolts/Common/BFExecutor.h"
+        },
+        {
+          'type': 'file',
+          'name': "BFTask.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Bolts/Bolts/Common/BFTask.h"
+        },
+        {
+          'type': 'file',
+          'name': "BFTaskCompletionSource.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
+        },
+        {
+          'type': 'file',
+          'name': "Bolts-Swift.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Bolts.framework/Headers/Bolts-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Bolts-umbrella.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Target Support Files/Bolts/Bolts-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Bolts.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Bolts/Bolts/Common/Bolts.h"
+        },
+        {
+          'type': 'file',
+          'name': "BoltsVersion.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Bolts/Bolts/Common/BoltsVersion.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Bolts.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Build/Intermediates/Pods.build/Debug-iphoneos/Bolts.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/KVNProgress.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "KVNProgress-Swift.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/KVNProgress.framework/Headers/KVNProgress-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "KVNProgress-umbrella.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Target Support Files/KVNProgress/KVNProgress-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "KVNProgress.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/KVNProgress/KVNProgress/Classes/KVNProgress.h"
+        },
+        {
+          'type': 'file',
+          'name': "KVNProgressConfiguration.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/KVNProgress/KVNProgress/Classes/KVNProgressConfiguration.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIColor+KVNContrast.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/KVNProgress/KVNProgress/Categories/UIColor+KVNContrast.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+KVNEmpty.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/KVNProgress/KVNProgress/Categories/UIImage+KVNEmpty.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+KVNImageEffects.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/KVNProgress/KVNProgress/Categories/UIImage+KVNImageEffects.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/KVNProgress.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Build/Intermediates/Pods.build/Debug-iphoneos/KVNProgress.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "PFACL.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFACL.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFAnalytics.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFAnalytics.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFAnonymousUtils.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFAnonymousUtils.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFCloud.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFCloud.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFConfig.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFConfig.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFConstants.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFConstants.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFFile.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFFile.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFGeoPoint.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFGeoPoint.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFInstallation.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFInstallation.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFNetworkActivityIndicatorManager.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFNetworkActivityIndicatorManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFNullability.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFNullability.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFObject+Subclass.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFObject+Subclass.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFObject.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFObject.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFProduct.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFProduct.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFPurchase.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFPurchase.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFPush.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFPush.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFQuery.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFQuery.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFRelation.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFRelation.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFRole.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFRole.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFSession.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFSession.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFSubclassing.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFSubclassing.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFUser.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFUser.h"
+        },
+        {
+          'type': 'file',
+          'name': "PFUserAuthenticationDelegate.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/PFUserAuthenticationDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "Parse-Swift.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/Parse-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Parse-umbrella.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Target Support Files/Parse/Parse-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Parse.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Parse.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Build/Intermediates/Pods.build/Debug-iphoneos/Parse.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Pods_Handshake.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-Handshake-umbrella.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Target Support Files/Pods-Handshake/Pods-Handshake-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_Handshake-Swift.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Pods_Handshake.framework/Headers/Pods_Handshake-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Pods_Handshake.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-Handshake.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "NSData+ImageContentType.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SDWebImage/SDWebImage/NSData+ImageContentType.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageCache.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SDWebImage/SDWebImage/SDImageCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImage-Swift.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/SDWebImage-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImage-umbrella.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Target Support Files/SDWebImage/SDWebImage-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageCompat.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SDWebImage/SDWebImage/SDWebImageCompat.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageDecoder.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SDWebImage/SDWebImage/SDWebImageDecoder.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageDownloader.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SDWebImage/SDWebImage/SDWebImageDownloader.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageDownloaderOperation.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageManager.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SDWebImage/SDWebImage/SDWebImageManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageOperation.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SDWebImage/SDWebImage/SDWebImageOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImagePrefetcher.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SDWebImage/SDWebImage/SDWebImagePrefetcher.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIButton+WebCache.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SDWebImage/SDWebImage/UIButton+WebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+GIF.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SDWebImage/SDWebImage/UIImage+GIF.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+MultiFormat.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SDWebImage/SDWebImage/UIImage+MultiFormat.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImageView+HighlightedWebCache.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImageView+WebCache.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SDWebImage/SDWebImage/UIImageView+WebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIView+WebCacheOperation.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SDWebImage/SDWebImage/UIView+WebCacheOperation.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Build/Intermediates/Pods.build/Debug-iphoneos/SDWebImage.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SVProgressHUD.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SVIndefiniteAnimatedView.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SVProgressHUD/SVProgressHUD/SVIndefiniteAnimatedView.h"
+        },
+        {
+          'type': 'file',
+          'name': "SVProgressHUD-Swift.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SVProgressHUD.framework/Headers/SVProgressHUD-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SVProgressHUD-umbrella.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/Target Support Files/SVProgressHUD/SVProgressHUD-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "SVProgressHUD.h",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SVProgressHUD.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/matthewbordas/Desktop/handshake/Build/Intermediates/Pods.build/Debug-iphoneos/SVProgressHUD.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

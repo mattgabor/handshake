@@ -288,7 +288,7 @@
 				TargetAttributes = {
 					88B6A85E1BC913DF00346558 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 29USK5L42E;
+						DevelopmentTeam = 37AZ3YZ57L;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -297,11 +297,11 @@
 					};
 					88B6A8701BC913DF00346558 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 29USK5L42E;
+						DevelopmentTeam = 37AZ3YZ57L;
 					};
 					88B6A87F1BC913E000346558 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 29USK5L42E;
+						DevelopmentTeam = 37AZ3YZ57L;
 					};
 				};
 			};

@@ -1,0 +1,8 @@
+version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
+options: "44af1d0cc6f68f180dd70797c2a3ddce"
+build_time: [497904062, 812915000]
+inputs: 
+	"/Users/matthewbordas/Desktop/handshake/Handshake WatchKit Extension/ExtensionDelegate.swift": [497787632, 0]
+	"/Users/matthewbordas/Desktop/handshake/Handshake WatchKit Extension/NotificationController.swift": [497904061, 0]
+	"/Users/matthewbordas/Desktop/handshake/Handshake WatchKit Extension/DemoAccelerometerInterfaceController.swift": [497856893, 0]
+	"/Users/matthewbordas/Desktop/handshake/Handshake WatchKit Extension/InterfaceController.swift": [497900925, 0]

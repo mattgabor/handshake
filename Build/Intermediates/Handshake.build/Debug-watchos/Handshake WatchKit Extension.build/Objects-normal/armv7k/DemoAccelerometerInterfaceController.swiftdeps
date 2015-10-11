@@ -1,0 +1,339 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AccelerometerInterfaceController"
+provides-nominal:
+- "C28Handshake_WatchKit_Extension32AccelerometerInterfaceController"
+provides-member:
+- ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", ""]
+provides-dynamic-lookup:
+- "labelY"
+- "motionManager"
+- "labelX"
+- "willActivate"
+- "labelZ"
+- "didDeactivate"
+- "awakeWithContext"
+depends-top-level:
+- "WKInterfaceController"
+- !private "StringLiteralType"
+- "CMMotionManager"
+- "AccelerometerInterfaceController"
+- !private "NSOperationQueue"
+- "AnyObject"
+- !private "=="
+- !private "Void"
+- !private "print"
+- !private "BooleanLiteralType"
+- !private "CMAccelerometerHandler"
+- "WKInterfaceLabel"
+- !private "CMAccelerometerData"
+- !private "NSError"
+depends-member:
+- ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "AnyObject"]
+- !private ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "CMAccelerometerData"]
+- !private ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "CMAccelerometerHandler"]
+- ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "CMMotionManager"]
+- !private ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "NSError"]
+- !private ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "NSOperationQueue"]
+- !private ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "Void"]
+- ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "WKInterfaceLabel"]
+- ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "awakeWithContext"]
+- ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "deinit"]
+- ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "didDeactivate"]
+- ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "init"]
+- ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "labelX"]
+- ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "labelY"]
+- ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "labelZ"]
+- ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "motionManager"]
+- !private ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "print"]
+- ["C28Handshake_WatchKit_Extension32AccelerometerInterfaceController", "willActivate"]
+- ["PSs9AnyObject", "CMMotionManager"]
+- !private ["PSs9AnyObject", "NSOperationQueue"]
+- !private ["PSs9AnyObject", "acceleration"]
+- !private ["PSs9AnyObject", "accelerometerAvailable"]
+- !private ["PSs9AnyObject", "accelerometerUpdateInterval"]
+- ["PSs9AnyObject", "awakeWithContext"]
+- !private ["PSs9AnyObject", "currentQueue"]
+- ["PSs9AnyObject", "didDeactivate"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "labelX"]
+- ["PSs9AnyObject", "labelY"]
+- ["PSs9AnyObject", "labelZ"]
+- ["PSs9AnyObject", "motionManager"]
+- !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "setText"]
+- !private ["PSs9AnyObject", "startAccelerometerUpdatesToQueue"]
+- !private ["PSs9AnyObject", "stopAccelerometerUpdates"]
+- ["PSs9AnyObject", "willActivate"]
+- ["PSs9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["VSC14CMAcceleration", "x"]
+- !private ["VSC14CMAcceleration", "y"]
+- !private ["VSC14CMAcceleration", "z"]
+- !private ["CSo19CMAccelerometerData", "acceleration"]
+- !private ["CSo9CMLogItem", "acceleration"]
+- !private ["CSo15CMMotionManager", "accelerometerAvailable"]
+- !private ["CSo15CMMotionManager", "accelerometerUpdateInterval"]
+- ["CSo15CMMotionManager", "init"]
+- !private ["CSo15CMMotionManager", "startAccelerometerUpdatesToQueue"]
+- !private ["CSo15CMMotionManager", "stopAccelerometerUpdates"]
+- ["PSs11CVarArgType", "CMMotionManager"]
+- !private ["PSs11CVarArgType", "NSOperationQueue"]
+- !private ["PSs11CVarArgType", "acceleration"]
+- !private ["PSs11CVarArgType", "accelerometerAvailable"]
+- !private ["PSs11CVarArgType", "accelerometerUpdateInterval"]
+- ["PSs11CVarArgType", "awakeWithContext"]
+- !private ["PSs11CVarArgType", "currentQueue"]
+- ["PSs11CVarArgType", "didDeactivate"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "labelX"]
+- ["PSs11CVarArgType", "labelY"]
+- ["PSs11CVarArgType", "labelZ"]
+- ["PSs11CVarArgType", "motionManager"]
+- !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "setText"]
+- !private ["PSs11CVarArgType", "startAccelerometerUpdatesToQueue"]
+- !private ["PSs11CVarArgType", "stopAccelerometerUpdates"]
+- ["PSs11CVarArgType", "willActivate"]
+- ["PSs11CVarArgType", ""]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "CMMotionManager"]
+- !private ["PSs23CustomStringConvertible", "NSOperationQueue"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "acceleration"]
+- !private ["PSs23CustomStringConvertible", "accelerometerAvailable"]
+- !private ["PSs23CustomStringConvertible", "accelerometerUpdateInterval"]
+- ["PSs23CustomStringConvertible", "awakeWithContext"]
+- !private ["PSs23CustomStringConvertible", "currentQueue"]
+- ["PSs23CustomStringConvertible", "didDeactivate"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "labelX"]
+- ["PSs23CustomStringConvertible", "labelY"]
+- ["PSs23CustomStringConvertible", "labelZ"]
+- ["PSs23CustomStringConvertible", "motionManager"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "setText"]
+- !private ["PSs23CustomStringConvertible", "startAccelerometerUpdatesToQueue"]
+- !private ["PSs23CustomStringConvertible", "stopAccelerometerUpdates"]
+- ["PSs23CustomStringConvertible", "willActivate"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- ["PSs9Equatable", "CMMotionManager"]
+- !private ["PSs9Equatable", "NSOperationQueue"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "acceleration"]
+- !private ["PSs9Equatable", "accelerometerAvailable"]
+- !private ["PSs9Equatable", "accelerometerUpdateInterval"]
+- ["PSs9Equatable", "awakeWithContext"]
+- !private ["PSs9Equatable", "currentQueue"]
+- ["PSs9Equatable", "didDeactivate"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "labelX"]
+- ["PSs9Equatable", "labelY"]
+- ["PSs9Equatable", "labelZ"]
+- ["PSs9Equatable", "motionManager"]
+- !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "setText"]
+- !private ["PSs9Equatable", "startAccelerometerUpdatesToQueue"]
+- !private ["PSs9Equatable", "stopAccelerometerUpdates"]
+- ["PSs9Equatable", "willActivate"]
+- ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- ["PSs8Hashable", "CMMotionManager"]
+- !private ["PSs8Hashable", "NSOperationQueue"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "acceleration"]
+- !private ["PSs8Hashable", "accelerometerAvailable"]
+- !private ["PSs8Hashable", "accelerometerUpdateInterval"]
+- ["PSs8Hashable", "awakeWithContext"]
+- !private ["PSs8Hashable", "currentQueue"]
+- ["PSs8Hashable", "didDeactivate"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "labelX"]
+- ["PSs8Hashable", "labelY"]
+- ["PSs8Hashable", "labelZ"]
+- ["PSs8Hashable", "motionManager"]
+- !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "setText"]
+- !private ["PSs8Hashable", "startAccelerometerUpdatesToQueue"]
+- !private ["PSs8Hashable", "stopAccelerometerUpdates"]
+- ["PSs8Hashable", "willActivate"]
+- ["PSs8Hashable", ""]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSo8NSCoding", "acceleration"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "acceleration"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "CMAccelerometerData"]
+- !private ["CSo8NSObject", "CMAccelerometerHandler"]
+- ["CSo8NSObject", "CMMotionManager"]
+- !private ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSOperationQueue"]
+- !private ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "WKInterfaceLabel"]
+- !private ["CSo8NSObject", "acceleration"]
+- !private ["CSo8NSObject", "accelerometerAvailable"]
+- !private ["CSo8NSObject", "accelerometerUpdateInterval"]
+- ["CSo8NSObject", "awakeWithContext"]
+- !private ["CSo8NSObject", "currentQueue"]
+- ["CSo8NSObject", "didDeactivate"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "labelX"]
+- ["CSo8NSObject", "labelY"]
+- ["CSo8NSObject", "labelZ"]
+- ["CSo8NSObject", "motionManager"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "setText"]
+- !private ["CSo8NSObject", "startAccelerometerUpdatesToQueue"]
+- !private ["CSo8NSObject", "stopAccelerometerUpdates"]
+- ["CSo8NSObject", "willActivate"]
+- ["PSo16NSObjectProtocol", "CMMotionManager"]
+- !private ["PSo16NSObjectProtocol", "NSOperationQueue"]
+- !private ["PSo16NSObjectProtocol", "acceleration"]
+- !private ["PSo16NSObjectProtocol", "accelerometerAvailable"]
+- !private ["PSo16NSObjectProtocol", "accelerometerUpdateInterval"]
+- ["PSo16NSObjectProtocol", "awakeWithContext"]
+- !private ["PSo16NSObjectProtocol", "currentQueue"]
+- ["PSo16NSObjectProtocol", "didDeactivate"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "labelX"]
+- ["PSo16NSObjectProtocol", "labelY"]
+- ["PSo16NSObjectProtocol", "labelZ"]
+- ["PSo16NSObjectProtocol", "motionManager"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "setText"]
+- !private ["PSo16NSObjectProtocol", "startAccelerometerUpdatesToQueue"]
+- !private ["PSo16NSObjectProtocol", "stopAccelerometerUpdates"]
+- ["PSo16NSObjectProtocol", "willActivate"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo16NSOperationQueue", "currentQueue"]
+- !private ["PSo14NSSecureCoding", "acceleration"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs10Streamable", "init"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- ["CSo21WKInterfaceController", "AnyObject"]
+- !private ["CSo21WKInterfaceController", "CMAccelerometerData"]
+- !private ["CSo21WKInterfaceController", "CMAccelerometerHandler"]
+- ["CSo21WKInterfaceController", "CMMotionManager"]
+- !private ["CSo21WKInterfaceController", "NSError"]
+- !private ["CSo21WKInterfaceController", "NSOperationQueue"]
+- !private ["CSo21WKInterfaceController", "Void"]
+- ["CSo21WKInterfaceController", "WKInterfaceLabel"]
+- ["CSo21WKInterfaceController", "awakeWithContext"]
+- ["CSo21WKInterfaceController", "didDeactivate"]
+- ["CSo21WKInterfaceController", "init"]
+- ["CSo21WKInterfaceController", "labelX"]
+- ["CSo21WKInterfaceController", "labelY"]
+- ["CSo21WKInterfaceController", "labelZ"]
+- ["CSo21WKInterfaceController", "motionManager"]
+- !private ["CSo21WKInterfaceController", "print"]
+- ["CSo21WKInterfaceController", "willActivate"]
+- ["CSo21WKInterfaceController", ""]
+- !private ["CSo16WKInterfaceLabel", "setText"]
+- !private ["CSo17WKInterfaceObject", "setText"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "init"]
+depends-nominal:
+- "C28Handshake_WatchKit_Extension32AccelerometerInterfaceController"
+- "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "VSC14CMAcceleration"
+- !private "CSo19CMAccelerometerData"
+- !private "CSo9CMLogItem"
+- "CSo15CMMotionManager"
+- "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- "PSs8Hashable"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs14MirrorPathType"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo16NSOperationQueue"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs10Streamable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- "CSo21WKInterfaceController"
+- !private "CSo16WKInterfaceLabel"
+- !private "CSo17WKInterfaceObject"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/WatchKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/CoreLocation.swiftmodule"
+interface-hash: "83124d45a8c4f336e361b94c1fa91569"

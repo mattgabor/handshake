@@ -152,6 +152,11 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
         {
             print("Found someone by you")
             nearestBeacon = beacons[0]
+            self.userLabel.text = "About to send local notification"
+            // Send local notification, or send remote from parse
+            let nameReminder = UILocalNotification()
+            nameReminder.userInfo = nameWithImageDictionary
+            UIApplication.sharedApplication().scheduleLocalNotification(nameReminder)
             
             switch nearestBeacon.proximity
             {
@@ -162,14 +167,10 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
                     print("Near you")
                 case CLProximity.Far:
                     print("Far!!")
-                    if haveFormattedDictionary! == true
-                    {
-                        self.userLabel.text = "About to send local notification"
-                        // Send local notification, or send remote from parse
-                        let nameReminder = UILocalNotification()
-                        nameReminder.userInfo = nameWithImageDictionary
-                        UIApplication.sharedApplication().scheduleLocalNotification(nameReminder)
-                    }
+                    //if haveFormattedDictionary! == true
+                    //{
+                
+                    //}
                 default: break
                 
             }

@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
+options: "40242fcc6253bfb041c50c3234230fc3"
+build_time: [497903644, 305671000]
+inputs: 
+	"/Users/matthewbordas/Desktop/handshake/Handshake/HomeViewController.swift": [497900959, 0]
+	"/Users/matthewbordas/Desktop/handshake/Handshake/AppDelegate.swift": [497903641, 0]

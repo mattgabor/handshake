@@ -107,8 +107,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
                     {
                             (image: UIImage?, error: NSError?, cacheType: SDImageCacheType, finished: Bool, imageURL: NSURL?) -> Void in
                             // --- Send data to watch once request completes ---
-                            //let imageAsData = UIImageJPEGRepresentation(image!, 0.5)!
-                            self.homeVC.nameWithImageDictionary = ["name" : shakerName, "image" : image!]
+                            let imageAsData = UIImageJPEGRepresentation(image!, 0.5)!
+                            self.homeVC.nameWithImageDictionary = ["name" : shakerName, "image" : imageAsData]
                             self.homeVC.haveFormattedDictionary = true
                             self.homeVC.userLabel.text = "Query completed"
                     }

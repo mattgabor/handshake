@@ -37,13 +37,14 @@ class NotificationController: WKUserNotificationInterfaceController {
         super.didDeactivate()
     }
     
-    /*
+    
     override func didReceiveLocalNotification(localNotification: UILocalNotification, withCompletion completionHandler: ((WKUserNotificationInterfaceType) -> Void)) {
         // This method is called when a local notification needs to be presented.
         // Implement it if you use a dynamic notification interface.
         // Populate your dynamic notification interface as quickly as possible.
         let shakerData = localNotification.userInfo!
-        self.shakerImage.setImage((shakerData["image"] as! UIImage))
+        let shakerImageData = shakerData["image"] as! NSData
+        self.shakerPic.setImage(UIImage(data: shakerImageData))
         self.shakerName.setText(shakerData["name"] as? String)
         
         print("\(localNotification)")

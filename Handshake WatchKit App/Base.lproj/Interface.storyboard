@@ -65,10 +65,6 @@
                         <label alignment="center" text="Shaker's Name" textAlignment="center" id="Inc-Go-qxi"/>
                         <imageView alignment="left" id="sbl-sQ-Iuu"/>
                     </items>
-                    <connections>
-                        <outlet property="shakerImage" destination="sbl-sQ-Iuu" id="pgA-vZ-yWI"/>
-                        <outlet property="shakerName" destination="Inc-Go-qxi" id="UsJ-m9-Gsr"/>
-                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>

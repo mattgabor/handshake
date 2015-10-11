@@ -1,0 +1,1081 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AppDelegate"
+provides-nominal:
+- "C9Handshake11AppDelegate"
+provides-member:
+- ["C9Handshake11AppDelegate", ""]
+provides-dynamic-lookup:
+- "applicationDidBecomeActive"
+- "applicationWillTerminate"
+- "applicationWillResignActive"
+- "application"
+- "applicationDidEnterBackground"
+- "sessionWatchStateDidChange"
+- "window"
+- "homeVC"
+- "applicationWillEnterForeground"
+- "session"
+depends-top-level:
+- !private "print"
+- !private "NSError"
+- !private "Array"
+- !private "Parse"
+- !private "UILocalNotificationDefaultSoundName"
+- !private "UIImage"
+- !private "NSURL"
+- !private "PFUser"
+- "UIApplication"
+- !private "BooleanLiteralType"
+- "UIResponder"
+- "WCSession"
+- "String"
+- "HomeViewController"
+- !private "PFQuery"
+- !private "SDImageCacheType"
+- !private "PFFile"
+- !private "=="
+- "AnyObject"
+- "AppDelegate"
+- !private "SDWebImageManager"
+- !private "UILocalNotification"
+- "UIApplicationDelegate"
+- !private "UIImageJPEGRepresentation"
+- !private "UIUserNotificationSettings"
+- "UIWindow"
+- "Void"
+- !private "NSDate"
+- !private "PFObject"
+- !private "StringLiteralType"
+- "Bool"
+- "NSObject"
+- "WCSessionDelegate"
+- "Dictionary"
+depends-member:
+- ["PSs9AnyObject", "HomeViewController"]
+- !private ["PSs9AnyObject", "NSDate"]
+- !private ["PSs9AnyObject", "NSURL"]
+- !private ["PSs9AnyObject", "PFQuery"]
+- !private ["PSs9AnyObject", "Parse"]
+- !private ["PSs9AnyObject", "SDWebImageManager"]
+- !private ["PSs9AnyObject", "UIApplication"]
+- !private ["PSs9AnyObject", "UIImageJPEGRepresentation"]
+- !private ["PSs9AnyObject", "UILocalNotification"]
+- !private ["PSs9AnyObject", "UILocalNotificationDefaultSoundName"]
+- !private ["PSs9AnyObject", "UIUserNotificationSettings"]
+- !private ["PSs9AnyObject", "WCSession"]
+- !private ["PSs9AnyObject", "activateSession"]
+- !private ["PSs9AnyObject", "alertBody"]
+- ["PSs9AnyObject", "application"]
+- ["PSs9AnyObject", "applicationDidBecomeActive"]
+- ["PSs9AnyObject", "applicationDidEnterBackground"]
+- ["PSs9AnyObject", "applicationDidFinishLaunching"]
+- ["PSs9AnyObject", "applicationDidReceiveMemoryWarning"]
+- ["PSs9AnyObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs9AnyObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs9AnyObject", "applicationShouldRequestHealthAuthorization"]
+- ["PSs9AnyObject", "applicationSignificantTimeChange"]
+- ["PSs9AnyObject", "applicationWillEnterForeground"]
+- ["PSs9AnyObject", "applicationWillResignActive"]
+- ["PSs9AnyObject", "applicationWillTerminate"]
+- !private ["PSs9AnyObject", "defaultSession"]
+- !private ["PSs9AnyObject", "delegate"]
+- !private ["PSs9AnyObject", "description"]
+- !private ["PSs9AnyObject", "downloadImageWithURL"]
+- !private ["PSs9AnyObject", "enableLocalDatastore"]
+- !private ["PSs9AnyObject", "fireDate"]
+- !private ["PSs9AnyObject", "getFirstObjectInBackgroundWithBlock"]
+- !private ["PSs9AnyObject", "haveFormattedDictionary"]
+- ["PSs9AnyObject", "homeVC"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "isSupported"]
+- !private ["PSs9AnyObject", "minor"]
+- !private ["PSs9AnyObject", "nameWithImageDictionary"]
+- !private ["PSs9AnyObject", "nearestBeacon"]
+- !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "queryParseForShaker"]
+- !private ["PSs9AnyObject", "reachable"]
+- !private ["PSs9AnyObject", "registerUserNotificationSettings"]
+- !private ["PSs9AnyObject", "respondsToSelector"]
+- !private ["PSs9AnyObject", "scheduleLocalNotification"]
+- ["PSs9AnyObject", "session"]
+- ["PSs9AnyObject", "sessionReachabilityDidChange"]
+- ["PSs9AnyObject", "sessionWatchStateDidChange"]
+- !private ["PSs9AnyObject", "setApplicationId"]
+- !private ["PSs9AnyObject", "sharedApplication"]
+- !private ["PSs9AnyObject", "sharedManager"]
+- !private ["PSs9AnyObject", "soundName"]
+- !private ["PSs9AnyObject", "subscript"]
+- !private ["PSs9AnyObject", "text"]
+- !private ["PSs9AnyObject", "url"]
+- !private ["PSs9AnyObject", "userLabel"]
+- !private ["PSs9AnyObject", "username"]
+- !private ["PSs9AnyObject", "whereKey"]
+- ["PSs9AnyObject", "window"]
+- ["PSs9AnyObject", ""]
+- ["C9Handshake11AppDelegate", "AnyObject"]
+- ["C9Handshake11AppDelegate", "Bool"]
+- ["C9Handshake11AppDelegate", "HomeViewController"]
+- !private ["C9Handshake11AppDelegate", "NSDate"]
+- !private ["C9Handshake11AppDelegate", "NSError"]
+- ["C9Handshake11AppDelegate", "NSObject"]
+- !private ["C9Handshake11AppDelegate", "NSURL"]
+- !private ["C9Handshake11AppDelegate", "PFFile"]
+- !private ["C9Handshake11AppDelegate", "PFObject"]
+- !private ["C9Handshake11AppDelegate", "PFQuery"]
+- !private ["C9Handshake11AppDelegate", "PFUser"]
+- !private ["C9Handshake11AppDelegate", "Parse"]
+- !private ["C9Handshake11AppDelegate", "SDImageCacheType"]
+- !private ["C9Handshake11AppDelegate", "SDWebImageManager"]
+- ["C9Handshake11AppDelegate", "String"]
+- ["C9Handshake11AppDelegate", "UIApplication"]
+- !private ["C9Handshake11AppDelegate", "UIImage"]
+- !private ["C9Handshake11AppDelegate", "UIImageJPEGRepresentation"]
+- !private ["C9Handshake11AppDelegate", "UILocalNotification"]
+- !private ["C9Handshake11AppDelegate", "UILocalNotificationDefaultSoundName"]
+- !private ["C9Handshake11AppDelegate", "UIUserNotificationSettings"]
+- ["C9Handshake11AppDelegate", "UIWindow"]
+- ["C9Handshake11AppDelegate", "Void"]
+- ["C9Handshake11AppDelegate", "WCSession"]
+- ["C9Handshake11AppDelegate", "application"]
+- ["C9Handshake11AppDelegate", "applicationDidBecomeActive"]
+- ["C9Handshake11AppDelegate", "applicationDidEnterBackground"]
+- ["C9Handshake11AppDelegate", "applicationDidFinishLaunching"]
+- ["C9Handshake11AppDelegate", "applicationDidReceiveMemoryWarning"]
+- ["C9Handshake11AppDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["C9Handshake11AppDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["C9Handshake11AppDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["C9Handshake11AppDelegate", "applicationSignificantTimeChange"]
+- ["C9Handshake11AppDelegate", "applicationWillEnterForeground"]
+- ["C9Handshake11AppDelegate", "applicationWillResignActive"]
+- ["C9Handshake11AppDelegate", "applicationWillTerminate"]
+- ["C9Handshake11AppDelegate", "deinit"]
+- ["C9Handshake11AppDelegate", "homeVC"]
+- ["C9Handshake11AppDelegate", "init"]
+- !private ["C9Handshake11AppDelegate", "print"]
+- ["C9Handshake11AppDelegate", "session"]
+- ["C9Handshake11AppDelegate", "sessionReachabilityDidChange"]
+- ["C9Handshake11AppDelegate", "sessionWatchStateDidChange"]
+- ["C9Handshake11AppDelegate", "window"]
+- !private ["PSs23ArrayLiteralConvertible", "Alert"]
+- !private ["PSs23ArrayLiteralConvertible", "Badge"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["PSs23ArrayLiteralConvertible", "Sound"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSo27CBPeripheralManagerDelegate", "haveFormattedDictionary"]
+- ["PSo27CBPeripheralManagerDelegate", "init"]
+- !private ["PSo27CBPeripheralManagerDelegate", "nameWithImageDictionary"]
+- !private ["PSo27CBPeripheralManagerDelegate", "nearestBeacon"]
+- !private ["PSo27CBPeripheralManagerDelegate", "queryParseForShaker"]
+- !private ["PSo27CBPeripheralManagerDelegate", "userLabel"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["CSo8CLBeacon", "minor"]
+- !private ["PSo25CLLocationManagerDelegate", "haveFormattedDictionary"]
+- ["PSo25CLLocationManagerDelegate", "init"]
+- !private ["PSo25CLLocationManagerDelegate", "nameWithImageDictionary"]
+- !private ["PSo25CLLocationManagerDelegate", "nearestBeacon"]
+- !private ["PSo25CLLocationManagerDelegate", "queryParseForShaker"]
+- !private ["PSo25CLLocationManagerDelegate", "userLabel"]
+- ["PSs11CVarArgType", "HomeViewController"]
+- !private ["PSs11CVarArgType", "NSDate"]
+- !private ["PSs11CVarArgType", "NSURL"]
+- !private ["PSs11CVarArgType", "PFQuery"]
+- !private ["PSs11CVarArgType", "Parse"]
+- !private ["PSs11CVarArgType", "SDWebImageManager"]
+- !private ["PSs11CVarArgType", "UIApplication"]
+- !private ["PSs11CVarArgType", "UIImageJPEGRepresentation"]
+- !private ["PSs11CVarArgType", "UILocalNotification"]
+- !private ["PSs11CVarArgType", "UILocalNotificationDefaultSoundName"]
+- !private ["PSs11CVarArgType", "UIUserNotificationSettings"]
+- !private ["PSs11CVarArgType", "WCSession"]
+- !private ["PSs11CVarArgType", "activateSession"]
+- !private ["PSs11CVarArgType", "alertBody"]
+- ["PSs11CVarArgType", "application"]
+- ["PSs11CVarArgType", "applicationDidBecomeActive"]
+- ["PSs11CVarArgType", "applicationDidEnterBackground"]
+- ["PSs11CVarArgType", "applicationDidFinishLaunching"]
+- ["PSs11CVarArgType", "applicationDidReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs11CVarArgType", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs11CVarArgType", "applicationShouldRequestHealthAuthorization"]
+- ["PSs11CVarArgType", "applicationSignificantTimeChange"]
+- ["PSs11CVarArgType", "applicationWillEnterForeground"]
+- ["PSs11CVarArgType", "applicationWillResignActive"]
+- ["PSs11CVarArgType", "applicationWillTerminate"]
+- !private ["PSs11CVarArgType", "defaultSession"]
+- !private ["PSs11CVarArgType", "delegate"]
+- !private ["PSs11CVarArgType", "description"]
+- !private ["PSs11CVarArgType", "downloadImageWithURL"]
+- !private ["PSs11CVarArgType", "enableLocalDatastore"]
+- !private ["PSs11CVarArgType", "fireDate"]
+- !private ["PSs11CVarArgType", "getFirstObjectInBackgroundWithBlock"]
+- !private ["PSs11CVarArgType", "haveFormattedDictionary"]
+- ["PSs11CVarArgType", "homeVC"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "isSupported"]
+- !private ["PSs11CVarArgType", "minor"]
+- !private ["PSs11CVarArgType", "nameWithImageDictionary"]
+- !private ["PSs11CVarArgType", "nearestBeacon"]
+- !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "queryParseForShaker"]
+- !private ["PSs11CVarArgType", "reachable"]
+- !private ["PSs11CVarArgType", "registerUserNotificationSettings"]
+- !private ["PSs11CVarArgType", "respondsToSelector"]
+- !private ["PSs11CVarArgType", "scheduleLocalNotification"]
+- ["PSs11CVarArgType", "session"]
+- ["PSs11CVarArgType", "sessionReachabilityDidChange"]
+- ["PSs11CVarArgType", "sessionWatchStateDidChange"]
+- !private ["PSs11CVarArgType", "setApplicationId"]
+- !private ["PSs11CVarArgType", "sharedApplication"]
+- !private ["PSs11CVarArgType", "sharedManager"]
+- !private ["PSs11CVarArgType", "soundName"]
+- !private ["PSs11CVarArgType", "subscript"]
+- !private ["PSs11CVarArgType", "text"]
+- !private ["PSs11CVarArgType", "url"]
+- !private ["PSs11CVarArgType", "userLabel"]
+- !private ["PSs11CVarArgType", "username"]
+- !private ["PSs11CVarArgType", "whereKey"]
+- ["PSs11CVarArgType", "window"]
+- ["PSs11CVarArgType", ""]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "Key"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "Value"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "Key"]
+- !private ["PSs28CustomDebugStringConvertible", "Value"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- ["PSs23CustomStringConvertible", "HomeViewController"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "NSDate"]
+- !private ["PSs23CustomStringConvertible", "NSURL"]
+- !private ["PSs23CustomStringConvertible", "PFQuery"]
+- !private ["PSs23CustomStringConvertible", "Parse"]
+- !private ["PSs23CustomStringConvertible", "SDWebImageManager"]
+- !private ["PSs23CustomStringConvertible", "UIApplication"]
+- !private ["PSs23CustomStringConvertible", "UIImageJPEGRepresentation"]
+- !private ["PSs23CustomStringConvertible", "UILocalNotification"]
+- !private ["PSs23CustomStringConvertible", "UILocalNotificationDefaultSoundName"]
+- !private ["PSs23CustomStringConvertible", "UIUserNotificationSettings"]
+- !private ["PSs23CustomStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "WCSession"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "activateSession"]
+- !private ["PSs23CustomStringConvertible", "alertBody"]
+- ["PSs23CustomStringConvertible", "application"]
+- ["PSs23CustomStringConvertible", "applicationDidBecomeActive"]
+- ["PSs23CustomStringConvertible", "applicationDidEnterBackground"]
+- ["PSs23CustomStringConvertible", "applicationDidFinishLaunching"]
+- ["PSs23CustomStringConvertible", "applicationDidReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs23CustomStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs23CustomStringConvertible", "applicationShouldRequestHealthAuthorization"]
+- ["PSs23CustomStringConvertible", "applicationSignificantTimeChange"]
+- ["PSs23CustomStringConvertible", "applicationWillEnterForeground"]
+- ["PSs23CustomStringConvertible", "applicationWillResignActive"]
+- ["PSs23CustomStringConvertible", "applicationWillTerminate"]
+- !private ["PSs23CustomStringConvertible", "defaultSession"]
+- !private ["PSs23CustomStringConvertible", "delegate"]
+- !private ["PSs23CustomStringConvertible", "description"]
+- !private ["PSs23CustomStringConvertible", "downloadImageWithURL"]
+- !private ["PSs23CustomStringConvertible", "enableLocalDatastore"]
+- !private ["PSs23CustomStringConvertible", "fireDate"]
+- !private ["PSs23CustomStringConvertible", "getFirstObjectInBackgroundWithBlock"]
+- !private ["PSs23CustomStringConvertible", "haveFormattedDictionary"]
+- ["PSs23CustomStringConvertible", "homeVC"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "isSupported"]
+- !private ["PSs23CustomStringConvertible", "minor"]
+- !private ["PSs23CustomStringConvertible", "nameWithImageDictionary"]
+- !private ["PSs23CustomStringConvertible", "nearestBeacon"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "queryParseForShaker"]
+- !private ["PSs23CustomStringConvertible", "reachable"]
+- !private ["PSs23CustomStringConvertible", "registerUserNotificationSettings"]
+- !private ["PSs23CustomStringConvertible", "respondsToSelector"]
+- !private ["PSs23CustomStringConvertible", "scheduleLocalNotification"]
+- ["PSs23CustomStringConvertible", "session"]
+- ["PSs23CustomStringConvertible", "sessionReachabilityDidChange"]
+- ["PSs23CustomStringConvertible", "sessionWatchStateDidChange"]
+- !private ["PSs23CustomStringConvertible", "setApplicationId"]
+- !private ["PSs23CustomStringConvertible", "sharedApplication"]
+- !private ["PSs23CustomStringConvertible", "sharedManager"]
+- !private ["PSs23CustomStringConvertible", "soundName"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "text"]
+- !private ["PSs23CustomStringConvertible", "url"]
+- !private ["PSs23CustomStringConvertible", "userLabel"]
+- !private ["PSs23CustomStringConvertible", "username"]
+- !private ["PSs23CustomStringConvertible", "whereKey"]
+- ["PSs23CustomStringConvertible", "window"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["VSs10Dictionary", "Index"]
+- !private ["VSs10Dictionary", "Key"]
+- !private ["VSs10Dictionary", "Value"]
+- !private ["VSs10Dictionary", "deinit"]
+- !private ["VSs10Dictionary", "subscript"]
+- !private ["PSs28DictionaryLiteralConvertible", "Index"]
+- !private ["PSs28DictionaryLiteralConvertible", "Key"]
+- !private ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "Alert"]
+- !private ["PSs9Equatable", "Badge"]
+- !private ["PSs9Equatable", "Element"]
+- ["PSs9Equatable", "HomeViewController"]
+- !private ["PSs9Equatable", "NSDate"]
+- !private ["PSs9Equatable", "NSURL"]
+- !private ["PSs9Equatable", "PFQuery"]
+- !private ["PSs9Equatable", "Parse"]
+- !private ["PSs9Equatable", "SDWebImageManager"]
+- !private ["PSs9Equatable", "Sound"]
+- !private ["PSs9Equatable", "UIApplication"]
+- !private ["PSs9Equatable", "UIImageJPEGRepresentation"]
+- !private ["PSs9Equatable", "UILocalNotification"]
+- !private ["PSs9Equatable", "UILocalNotificationDefaultSoundName"]
+- !private ["PSs9Equatable", "UIUserNotificationSettings"]
+- !private ["PSs9Equatable", "WCSession"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "activateSession"]
+- !private ["PSs9Equatable", "alertBody"]
+- ["PSs9Equatable", "application"]
+- ["PSs9Equatable", "applicationDidBecomeActive"]
+- ["PSs9Equatable", "applicationDidEnterBackground"]
+- ["PSs9Equatable", "applicationDidFinishLaunching"]
+- ["PSs9Equatable", "applicationDidReceiveMemoryWarning"]
+- ["PSs9Equatable", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs9Equatable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs9Equatable", "applicationShouldRequestHealthAuthorization"]
+- ["PSs9Equatable", "applicationSignificantTimeChange"]
+- ["PSs9Equatable", "applicationWillEnterForeground"]
+- ["PSs9Equatable", "applicationWillResignActive"]
+- ["PSs9Equatable", "applicationWillTerminate"]
+- !private ["PSs9Equatable", "defaultSession"]
+- !private ["PSs9Equatable", "delegate"]
+- !private ["PSs9Equatable", "description"]
+- !private ["PSs9Equatable", "downloadImageWithURL"]
+- !private ["PSs9Equatable", "enableLocalDatastore"]
+- !private ["PSs9Equatable", "fireDate"]
+- !private ["PSs9Equatable", "getFirstObjectInBackgroundWithBlock"]
+- !private ["PSs9Equatable", "haveFormattedDictionary"]
+- ["PSs9Equatable", "homeVC"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "isSupported"]
+- !private ["PSs9Equatable", "minor"]
+- !private ["PSs9Equatable", "nameWithImageDictionary"]
+- !private ["PSs9Equatable", "nearestBeacon"]
+- !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "queryParseForShaker"]
+- !private ["PSs9Equatable", "reachable"]
+- !private ["PSs9Equatable", "registerUserNotificationSettings"]
+- !private ["PSs9Equatable", "respondsToSelector"]
+- !private ["PSs9Equatable", "scheduleLocalNotification"]
+- ["PSs9Equatable", "session"]
+- ["PSs9Equatable", "sessionReachabilityDidChange"]
+- ["PSs9Equatable", "sessionWatchStateDidChange"]
+- !private ["PSs9Equatable", "setApplicationId"]
+- !private ["PSs9Equatable", "sharedApplication"]
+- !private ["PSs9Equatable", "sharedManager"]
+- !private ["PSs9Equatable", "soundName"]
+- !private ["PSs9Equatable", "subscript"]
+- !private ["PSs9Equatable", "text"]
+- !private ["PSs9Equatable", "url"]
+- !private ["PSs9Equatable", "userLabel"]
+- !private ["PSs9Equatable", "username"]
+- !private ["PSs9Equatable", "whereKey"]
+- ["PSs9Equatable", "window"]
+- ["PSs9Equatable", ""]
+- !private ["PSs9ErrorType", "description"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["PSs13GeneratorType", "Element"]
+- ["PSs8Hashable", "HomeViewController"]
+- !private ["PSs8Hashable", "NSDate"]
+- !private ["PSs8Hashable", "NSURL"]
+- !private ["PSs8Hashable", "PFQuery"]
+- !private ["PSs8Hashable", "Parse"]
+- !private ["PSs8Hashable", "SDWebImageManager"]
+- !private ["PSs8Hashable", "UIApplication"]
+- !private ["PSs8Hashable", "UIImageJPEGRepresentation"]
+- !private ["PSs8Hashable", "UILocalNotification"]
+- !private ["PSs8Hashable", "UILocalNotificationDefaultSoundName"]
+- !private ["PSs8Hashable", "UIUserNotificationSettings"]
+- !private ["PSs8Hashable", "WCSession"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "activateSession"]
+- !private ["PSs8Hashable", "alertBody"]
+- ["PSs8Hashable", "application"]
+- ["PSs8Hashable", "applicationDidBecomeActive"]
+- ["PSs8Hashable", "applicationDidEnterBackground"]
+- ["PSs8Hashable", "applicationDidFinishLaunching"]
+- ["PSs8Hashable", "applicationDidReceiveMemoryWarning"]
+- ["PSs8Hashable", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs8Hashable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs8Hashable", "applicationShouldRequestHealthAuthorization"]
+- ["PSs8Hashable", "applicationSignificantTimeChange"]
+- ["PSs8Hashable", "applicationWillEnterForeground"]
+- ["PSs8Hashable", "applicationWillResignActive"]
+- ["PSs8Hashable", "applicationWillTerminate"]
+- !private ["PSs8Hashable", "defaultSession"]
+- !private ["PSs8Hashable", "delegate"]
+- !private ["PSs8Hashable", "description"]
+- !private ["PSs8Hashable", "downloadImageWithURL"]
+- !private ["PSs8Hashable", "enableLocalDatastore"]
+- !private ["PSs8Hashable", "fireDate"]
+- !private ["PSs8Hashable", "getFirstObjectInBackgroundWithBlock"]
+- !private ["PSs8Hashable", "haveFormattedDictionary"]
+- ["PSs8Hashable", "homeVC"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "isSupported"]
+- !private ["PSs8Hashable", "minor"]
+- !private ["PSs8Hashable", "nameWithImageDictionary"]
+- !private ["PSs8Hashable", "nearestBeacon"]
+- !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "queryParseForShaker"]
+- !private ["PSs8Hashable", "reachable"]
+- !private ["PSs8Hashable", "registerUserNotificationSettings"]
+- !private ["PSs8Hashable", "respondsToSelector"]
+- !private ["PSs8Hashable", "scheduleLocalNotification"]
+- ["PSs8Hashable", "session"]
+- ["PSs8Hashable", "sessionReachabilityDidChange"]
+- ["PSs8Hashable", "sessionWatchStateDidChange"]
+- !private ["PSs8Hashable", "setApplicationId"]
+- !private ["PSs8Hashable", "sharedApplication"]
+- !private ["PSs8Hashable", "sharedManager"]
+- !private ["PSs8Hashable", "soundName"]
+- !private ["PSs8Hashable", "subscript"]
+- !private ["PSs8Hashable", "text"]
+- !private ["PSs8Hashable", "url"]
+- !private ["PSs8Hashable", "userLabel"]
+- !private ["PSs8Hashable", "username"]
+- !private ["PSs8Hashable", "whereKey"]
+- ["PSs8Hashable", "window"]
+- ["PSs8Hashable", ""]
+- !private ["C9Handshake18HomeViewController", "haveFormattedDictionary"]
+- ["C9Handshake18HomeViewController", "init"]
+- !private ["C9Handshake18HomeViewController", "nameWithImageDictionary"]
+- !private ["C9Handshake18HomeViewController", "nearestBeacon"]
+- !private ["C9Handshake18HomeViewController", "queryParseForShaker"]
+- !private ["C9Handshake18HomeViewController", "userLabel"]
+- !private ["SQ", "deinit"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "Key"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "Value"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSo8NSCoding", "alertBody"]
+- !private ["PSo8NSCoding", "description"]
+- !private ["PSo8NSCoding", "fireDate"]
+- !private ["PSo8NSCoding", "haveFormattedDictionary"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "minor"]
+- !private ["PSo8NSCoding", "nameWithImageDictionary"]
+- !private ["PSo8NSCoding", "nearestBeacon"]
+- !private ["PSo8NSCoding", "queryParseForShaker"]
+- !private ["PSo8NSCoding", "soundName"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "userLabel"]
+- !private ["PSo9NSCopying", "alertBody"]
+- !private ["PSo9NSCopying", "description"]
+- !private ["PSo9NSCopying", "fireDate"]
+- !private ["PSo9NSCopying", "getFirstObjectInBackgroundWithBlock"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "minor"]
+- !private ["PSo9NSCopying", "soundName"]
+- !private ["PSo9NSCopying", "whereKey"]
+- !private ["CSo6NSDate", "init"]
+- !private ["CSo7NSError", "description"]
+- !private ["PSo26NSExtensionRequestHandling", "haveFormattedDictionary"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "nameWithImageDictionary"]
+- !private ["PSo26NSExtensionRequestHandling", "nearestBeacon"]
+- !private ["PSo26NSExtensionRequestHandling", "queryParseForShaker"]
+- !private ["PSo26NSExtensionRequestHandling", "userLabel"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "HomeViewController"]
+- !private ["CSo8NSObject", "NSDate"]
+- !private ["CSo8NSObject", "NSError"]
+- ["CSo8NSObject", "NSObject"]
+- !private ["CSo8NSObject", "NSURL"]
+- !private ["CSo8NSObject", "PFFile"]
+- !private ["CSo8NSObject", "PFObject"]
+- !private ["CSo8NSObject", "PFQuery"]
+- !private ["CSo8NSObject", "PFUser"]
+- !private ["CSo8NSObject", "Parse"]
+- !private ["CSo8NSObject", "SDImageCacheType"]
+- !private ["CSo8NSObject", "SDWebImageManager"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIApplication"]
+- !private ["CSo8NSObject", "UIImage"]
+- !private ["CSo8NSObject", "UIImageJPEGRepresentation"]
+- !private ["CSo8NSObject", "UILocalNotification"]
+- !private ["CSo8NSObject", "UILocalNotificationDefaultSoundName"]
+- !private ["CSo8NSObject", "UIUserNotificationSettings"]
+- ["CSo8NSObject", "UIWindow"]
+- ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "WCSession"]
+- !private ["CSo8NSObject", "activateSession"]
+- !private ["CSo8NSObject", "alertBody"]
+- ["CSo8NSObject", "application"]
+- ["CSo8NSObject", "applicationDidBecomeActive"]
+- ["CSo8NSObject", "applicationDidEnterBackground"]
+- ["CSo8NSObject", "applicationDidFinishLaunching"]
+- ["CSo8NSObject", "applicationDidReceiveMemoryWarning"]
+- ["CSo8NSObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["CSo8NSObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["CSo8NSObject", "applicationShouldRequestHealthAuthorization"]
+- ["CSo8NSObject", "applicationSignificantTimeChange"]
+- ["CSo8NSObject", "applicationWillEnterForeground"]
+- ["CSo8NSObject", "applicationWillResignActive"]
+- ["CSo8NSObject", "applicationWillTerminate"]
+- !private ["CSo8NSObject", "defaultSession"]
+- !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "description"]
+- !private ["CSo8NSObject", "downloadImageWithURL"]
+- !private ["CSo8NSObject", "enableLocalDatastore"]
+- !private ["CSo8NSObject", "fireDate"]
+- !private ["CSo8NSObject", "getFirstObjectInBackgroundWithBlock"]
+- !private ["CSo8NSObject", "haveFormattedDictionary"]
+- ["CSo8NSObject", "homeVC"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isSupported"]
+- !private ["CSo8NSObject", "minor"]
+- !private ["CSo8NSObject", "nameWithImageDictionary"]
+- !private ["CSo8NSObject", "nearestBeacon"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "queryParseForShaker"]
+- !private ["CSo8NSObject", "reachable"]
+- !private ["CSo8NSObject", "registerUserNotificationSettings"]
+- !private ["CSo8NSObject", "respondsToSelector"]
+- !private ["CSo8NSObject", "scheduleLocalNotification"]
+- ["CSo8NSObject", "session"]
+- ["CSo8NSObject", "sessionReachabilityDidChange"]
+- ["CSo8NSObject", "sessionWatchStateDidChange"]
+- !private ["CSo8NSObject", "setApplicationId"]
+- !private ["CSo8NSObject", "sharedApplication"]
+- !private ["CSo8NSObject", "sharedManager"]
+- !private ["CSo8NSObject", "soundName"]
+- !private ["CSo8NSObject", "subscript"]
+- !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "url"]
+- !private ["CSo8NSObject", "userLabel"]
+- !private ["CSo8NSObject", "username"]
+- !private ["CSo8NSObject", "whereKey"]
+- ["CSo8NSObject", "window"]
+- ["PSo16NSObjectProtocol", "HomeViewController"]
+- !private ["PSo16NSObjectProtocol", "NSDate"]
+- !private ["PSo16NSObjectProtocol", "NSURL"]
+- !private ["PSo16NSObjectProtocol", "PFQuery"]
+- !private ["PSo16NSObjectProtocol", "Parse"]
+- !private ["PSo16NSObjectProtocol", "SDWebImageManager"]
+- !private ["PSo16NSObjectProtocol", "UIApplication"]
+- !private ["PSo16NSObjectProtocol", "UIImageJPEGRepresentation"]
+- !private ["PSo16NSObjectProtocol", "UILocalNotification"]
+- !private ["PSo16NSObjectProtocol", "UILocalNotificationDefaultSoundName"]
+- !private ["PSo16NSObjectProtocol", "UIUserNotificationSettings"]
+- !private ["PSo16NSObjectProtocol", "WCSession"]
+- !private ["PSo16NSObjectProtocol", "activateSession"]
+- !private ["PSo16NSObjectProtocol", "alertBody"]
+- ["PSo16NSObjectProtocol", "application"]
+- ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
+- ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
+- ["PSo16NSObjectProtocol", "applicationDidFinishLaunching"]
+- ["PSo16NSObjectProtocol", "applicationDidReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo16NSObjectProtocol", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo16NSObjectProtocol", "applicationShouldRequestHealthAuthorization"]
+- ["PSo16NSObjectProtocol", "applicationSignificantTimeChange"]
+- ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
+- ["PSo16NSObjectProtocol", "applicationWillResignActive"]
+- ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- !private ["PSo16NSObjectProtocol", "defaultSession"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "description"]
+- !private ["PSo16NSObjectProtocol", "downloadImageWithURL"]
+- !private ["PSo16NSObjectProtocol", "enableLocalDatastore"]
+- !private ["PSo16NSObjectProtocol", "fireDate"]
+- !private ["PSo16NSObjectProtocol", "getFirstObjectInBackgroundWithBlock"]
+- !private ["PSo16NSObjectProtocol", "haveFormattedDictionary"]
+- ["PSo16NSObjectProtocol", "homeVC"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isSupported"]
+- !private ["PSo16NSObjectProtocol", "minor"]
+- !private ["PSo16NSObjectProtocol", "nameWithImageDictionary"]
+- !private ["PSo16NSObjectProtocol", "nearestBeacon"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "queryParseForShaker"]
+- !private ["PSo16NSObjectProtocol", "reachable"]
+- !private ["PSo16NSObjectProtocol", "registerUserNotificationSettings"]
+- !private ["PSo16NSObjectProtocol", "respondsToSelector"]
+- !private ["PSo16NSObjectProtocol", "scheduleLocalNotification"]
+- ["PSo16NSObjectProtocol", "session"]
+- ["PSo16NSObjectProtocol", "sessionReachabilityDidChange"]
+- ["PSo16NSObjectProtocol", "sessionWatchStateDidChange"]
+- !private ["PSo16NSObjectProtocol", "setApplicationId"]
+- !private ["PSo16NSObjectProtocol", "sharedApplication"]
+- !private ["PSo16NSObjectProtocol", "sharedManager"]
+- !private ["PSo16NSObjectProtocol", "soundName"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "url"]
+- !private ["PSo16NSObjectProtocol", "userLabel"]
+- !private ["PSo16NSObjectProtocol", "username"]
+- !private ["PSo16NSObjectProtocol", "whereKey"]
+- ["PSo16NSObjectProtocol", "window"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "description"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "minor"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo5NSURL", "init"]
+- !private ["PSs13OptionSetType", "Alert"]
+- !private ["PSs13OptionSetType", "Badge"]
+- !private ["PSs13OptionSetType", "Element"]
+- !private ["PSs13OptionSetType", "Sound"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["CSo6PFFile", "url"]
+- !private ["CSo8PFObject", "deinit"]
+- !private ["CSo8PFObject", "subscript"]
+- !private ["CSo8PFObject", "username"]
+- !private ["CSo7PFQuery", "getFirstObjectInBackgroundWithBlock"]
+- !private ["CSo7PFQuery", "init"]
+- !private ["CSo7PFQuery", "whereKey"]
+- !private ["PSo13PFSubclassing", "username"]
+- !private ["CSo6PFUser", "username"]
+- !private ["CSo5Parse", "enableLocalDatastore"]
+- !private ["CSo5Parse", "setApplicationId"]
+- !private ["PSs16RawRepresentable", "Alert"]
+- !private ["PSs16RawRepresentable", "Badge"]
+- !private ["PSs16RawRepresentable", "Element"]
+- !private ["PSs16RawRepresentable", "Sound"]
+- !private ["CSo17SDWebImageManager", "downloadImageWithURL"]
+- !private ["CSo17SDWebImageManager", "sharedManager"]
+- !private ["VSC17SDWebImageOptions", "Element"]
+- !private ["V10ObjectiveC8Selector", "deinit"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "Key"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "Value"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs14SetAlgebraType", "Alert"]
+- !private ["PSs14SetAlgebraType", "Badge"]
+- !private ["PSs14SetAlgebraType", "Element"]
+- !private ["PSs14SetAlgebraType", "Sound"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Streamable", "init"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "haveFormattedDictionary"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "nameWithImageDictionary"]
+- !private ["PSo21UIAppearanceContainer", "nearestBeacon"]
+- !private ["PSo21UIAppearanceContainer", "queryParseForShaker"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "userLabel"]
+- !private ["CSo13UIApplication", "registerUserNotificationSettings"]
+- !private ["CSo13UIApplication", "respondsToSelector"]
+- !private ["CSo13UIApplication", "scheduleLocalNotification"]
+- !private ["CSo13UIApplication", "sharedApplication"]
+- ["PSo21UIApplicationDelegate", "HomeViewController"]
+- !private ["PSo21UIApplicationDelegate", "NSDate"]
+- !private ["PSo21UIApplicationDelegate", "NSURL"]
+- !private ["PSo21UIApplicationDelegate", "PFQuery"]
+- !private ["PSo21UIApplicationDelegate", "Parse"]
+- !private ["PSo21UIApplicationDelegate", "SDWebImageManager"]
+- !private ["PSo21UIApplicationDelegate", "UIApplication"]
+- !private ["PSo21UIApplicationDelegate", "UIImageJPEGRepresentation"]
+- !private ["PSo21UIApplicationDelegate", "UILocalNotification"]
+- !private ["PSo21UIApplicationDelegate", "UILocalNotificationDefaultSoundName"]
+- !private ["PSo21UIApplicationDelegate", "UIUserNotificationSettings"]
+- !private ["PSo21UIApplicationDelegate", "WCSession"]
+- ["PSo21UIApplicationDelegate", "application"]
+- ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
+- ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
+- ["PSo21UIApplicationDelegate", "applicationDidFinishLaunching"]
+- ["PSo21UIApplicationDelegate", "applicationDidReceiveMemoryWarning"]
+- ["PSo21UIApplicationDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo21UIApplicationDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo21UIApplicationDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["PSo21UIApplicationDelegate", "applicationSignificantTimeChange"]
+- ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
+- ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
+- ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- !private ["PSo21UIApplicationDelegate", "homeVC"]
+- !private ["PSo21UIApplicationDelegate", "print"]
+- ["PSo21UIApplicationDelegate", "session"]
+- ["PSo21UIApplicationDelegate", "sessionReachabilityDidChange"]
+- ["PSo21UIApplicationDelegate", "sessionWatchStateDidChange"]
+- ["PSo21UIApplicationDelegate", "window"]
+- ["PSo21UIApplicationDelegate", ""]
+- !private ["PSo18UIContentContainer", "haveFormattedDictionary"]
+- ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "nameWithImageDictionary"]
+- !private ["PSo18UIContentContainer", "nearestBeacon"]
+- !private ["PSo18UIContentContainer", "queryParseForShaker"]
+- !private ["PSo18UIContentContainer", "userLabel"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["CSo7UILabel", "text"]
+- !private ["CSo19UILocalNotification", "alertBody"]
+- !private ["CSo19UILocalNotification", "fireDate"]
+- !private ["CSo19UILocalNotification", "init"]
+- !private ["CSo19UILocalNotification", "soundName"]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "HomeViewController"]
+- !private ["CSo11UIResponder", "NSDate"]
+- !private ["CSo11UIResponder", "NSError"]
+- ["CSo11UIResponder", "NSObject"]
+- !private ["CSo11UIResponder", "NSURL"]
+- !private ["CSo11UIResponder", "PFFile"]
+- !private ["CSo11UIResponder", "PFObject"]
+- !private ["CSo11UIResponder", "PFQuery"]
+- !private ["CSo11UIResponder", "PFUser"]
+- !private ["CSo11UIResponder", "Parse"]
+- !private ["CSo11UIResponder", "SDImageCacheType"]
+- !private ["CSo11UIResponder", "SDWebImageManager"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UIApplication"]
+- !private ["CSo11UIResponder", "UIImage"]
+- !private ["CSo11UIResponder", "UIImageJPEGRepresentation"]
+- !private ["CSo11UIResponder", "UILocalNotification"]
+- !private ["CSo11UIResponder", "UILocalNotificationDefaultSoundName"]
+- !private ["CSo11UIResponder", "UIUserNotificationSettings"]
+- ["CSo11UIResponder", "UIWindow"]
+- ["CSo11UIResponder", "Void"]
+- ["CSo11UIResponder", "WCSession"]
+- ["CSo11UIResponder", "application"]
+- ["CSo11UIResponder", "applicationDidBecomeActive"]
+- ["CSo11UIResponder", "applicationDidEnterBackground"]
+- ["CSo11UIResponder", "applicationDidFinishLaunching"]
+- ["CSo11UIResponder", "applicationDidReceiveMemoryWarning"]
+- ["CSo11UIResponder", "applicationProtectedDataDidBecomeAvailable"]
+- ["CSo11UIResponder", "applicationProtectedDataWillBecomeUnavailable"]
+- ["CSo11UIResponder", "applicationShouldRequestHealthAuthorization"]
+- ["CSo11UIResponder", "applicationSignificantTimeChange"]
+- ["CSo11UIResponder", "applicationWillEnterForeground"]
+- ["CSo11UIResponder", "applicationWillResignActive"]
+- ["CSo11UIResponder", "applicationWillTerminate"]
+- !private ["CSo11UIResponder", "haveFormattedDictionary"]
+- ["CSo11UIResponder", "homeVC"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "nameWithImageDictionary"]
+- !private ["CSo11UIResponder", "nearestBeacon"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "queryParseForShaker"]
+- !private ["CSo11UIResponder", "registerUserNotificationSettings"]
+- !private ["CSo11UIResponder", "respondsToSelector"]
+- !private ["CSo11UIResponder", "scheduleLocalNotification"]
+- ["CSo11UIResponder", "session"]
+- ["CSo11UIResponder", "sessionReachabilityDidChange"]
+- ["CSo11UIResponder", "sessionWatchStateDidChange"]
+- !private ["CSo11UIResponder", "sharedApplication"]
+- !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "userLabel"]
+- ["CSo11UIResponder", "window"]
+- ["CSo11UIResponder", ""]
+- !private ["PSo16UIStateRestoring", "haveFormattedDictionary"]
+- ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "nameWithImageDictionary"]
+- !private ["PSo16UIStateRestoring", "nearestBeacon"]
+- !private ["PSo16UIStateRestoring", "queryParseForShaker"]
+- !private ["PSo16UIStateRestoring", "userLabel"]
+- !private ["PSo18UITraitEnvironment", "haveFormattedDictionary"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "nameWithImageDictionary"]
+- !private ["PSo18UITraitEnvironment", "nearestBeacon"]
+- !private ["PSo18UITraitEnvironment", "queryParseForShaker"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "userLabel"]
+- !private ["CSo26UIUserNotificationSettings", "init"]
+- !private ["VSC22UIUserNotificationType", "Alert"]
+- !private ["VSC22UIUserNotificationType", "Badge"]
+- !private ["VSC22UIUserNotificationType", "Element"]
+- !private ["VSC22UIUserNotificationType", "Sound"]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo16UIViewController", "haveFormattedDictionary"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "nameWithImageDictionary"]
+- !private ["CSo16UIViewController", "nearestBeacon"]
+- !private ["CSo16UIViewController", "queryParseForShaker"]
+- !private ["CSo16UIViewController", "userLabel"]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["CSo9WCSession", "activateSession"]
+- !private ["CSo9WCSession", "defaultSession"]
+- !private ["CSo9WCSession", "delegate"]
+- !private ["CSo9WCSession", "isSupported"]
+- !private ["CSo9WCSession", "reachable"]
+- ["PSo17WCSessionDelegate", "HomeViewController"]
+- !private ["PSo17WCSessionDelegate", "NSDate"]
+- !private ["PSo17WCSessionDelegate", "NSURL"]
+- !private ["PSo17WCSessionDelegate", "PFQuery"]
+- !private ["PSo17WCSessionDelegate", "Parse"]
+- !private ["PSo17WCSessionDelegate", "SDWebImageManager"]
+- !private ["PSo17WCSessionDelegate", "UIApplication"]
+- !private ["PSo17WCSessionDelegate", "UIImageJPEGRepresentation"]
+- !private ["PSo17WCSessionDelegate", "UILocalNotification"]
+- !private ["PSo17WCSessionDelegate", "UILocalNotificationDefaultSoundName"]
+- !private ["PSo17WCSessionDelegate", "UIUserNotificationSettings"]
+- !private ["PSo17WCSessionDelegate", "WCSession"]
+- ["PSo17WCSessionDelegate", "application"]
+- ["PSo17WCSessionDelegate", "applicationDidBecomeActive"]
+- ["PSo17WCSessionDelegate", "applicationDidEnterBackground"]
+- ["PSo17WCSessionDelegate", "applicationDidFinishLaunching"]
+- ["PSo17WCSessionDelegate", "applicationDidReceiveMemoryWarning"]
+- ["PSo17WCSessionDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo17WCSessionDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo17WCSessionDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["PSo17WCSessionDelegate", "applicationSignificantTimeChange"]
+- ["PSo17WCSessionDelegate", "applicationWillEnterForeground"]
+- ["PSo17WCSessionDelegate", "applicationWillResignActive"]
+- ["PSo17WCSessionDelegate", "applicationWillTerminate"]
+- !private ["PSo17WCSessionDelegate", "haveFormattedDictionary"]
+- !private ["PSo17WCSessionDelegate", "homeVC"]
+- ["PSo17WCSessionDelegate", "init"]
+- !private ["PSo17WCSessionDelegate", "nameWithImageDictionary"]
+- !private ["PSo17WCSessionDelegate", "nearestBeacon"]
+- !private ["PSo17WCSessionDelegate", "print"]
+- !private ["PSo17WCSessionDelegate", "queryParseForShaker"]
+- ["PSo17WCSessionDelegate", "session"]
+- ["PSo17WCSessionDelegate", "sessionReachabilityDidChange"]
+- ["PSo17WCSessionDelegate", "sessionWatchStateDidChange"]
+- !private ["PSo17WCSessionDelegate", "userLabel"]
+- ["PSo17WCSessionDelegate", "window"]
+- ["PSo17WCSessionDelegate", ""]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "Value"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "Key"]
+- !private ["PSs12_Reflectable", "Value"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs12_Reflectable", "text"]
+depends-nominal:
+- "PSs9AnyObject"
+- "C9Handshake11AppDelegate"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSo27CBPeripheralManagerDelegate"
+- !private "V12CoreGraphics7CGFloat"
+- !private "CSo8CLBeacon"
+- "PSo25CLLocationManagerDelegate"
+- "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs9ErrorType"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- "C9Handshake18HomeViewController"
+- !private "SQ"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs14MirrorPathType"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSDate"
+- !private "CSo7NSError"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo5NSURL"
+- !private "PSs13OptionSetType"
+- !private "Sq"
+- !private "PSs16OutputStreamType"
+- !private "CSo6PFFile"
+- !private "CSo8PFObject"
+- !private "CSo7PFQuery"
+- !private "PSo13PFSubclassing"
+- !private "CSo6PFUser"
+- !private "CSo5Parse"
+- !private "PSs16RawRepresentable"
+- !private "CSo17SDWebImageManager"
+- !private "VSC17SDWebImageOptions"
+- !private "V10ObjectiveC8Selector"
+- !private "PSs12SequenceType"
+- !private "PSs14SetAlgebraType"
+- !private "VSs5Slice"
+- !private "PSs10Streamable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo13UIApplication"
+- "PSo21UIApplicationDelegate"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "CSo7UILabel"
+- !private "CSo19UILocalNotification"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo26UIUserNotificationSettings"
+- !private "VSC22UIUserNotificationType"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "CSo9WCSession"
+- "PSo17WCSessionDelegate"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/matthewbordas/Desktop/handshake/Handshake/Handshake-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Bolts.framework/Headers/Bolts.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Bolts.framework/Headers/BFTask.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Bolts.framework/Headers/BFDefines.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Bolts.framework/Modules/module.modulemap"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFPurchase.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFProduct.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFPush.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFInstallation.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFUserAuthenticationDelegate.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFSession.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFRole.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFRelation.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFQuery.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFObject+Subclass.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFGeoPoint.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFFile.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFConfig.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFCloud.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFSubclassing.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFObject.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFUser.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFAnonymousUtils.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFConstants.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFAnalytics.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFNullability.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/PFACL.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/Parse.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Headers/Parse-umbrella.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/Parse.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreBluetooth.swiftmodule"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/KVNProgress.framework/Headers/UIImage+KVNImageEffects.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/KVNProgress.framework/Headers/UIImage+KVNEmpty.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/KVNProgress.framework/Headers/UIColor+KVNContrast.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/KVNProgress.framework/Headers/KVNProgressConfiguration.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/KVNProgress.framework/Headers/KVNProgress.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/KVNProgress.framework/Headers/KVNProgress-umbrella.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/KVNProgress.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/WatchConnectivity.swiftmodule"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/matthewbordas/Desktop/handshake/Build/Products/Debug-iphoneos/SDWebImage.framework/Modules/module.modulemap"
+interface-hash: "6caf5c84dc648b4f965ebd87ef4af97c"

@@ -1,0 +1,44 @@
+dependencies: \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/ParseManager.m \
+  /Users/matthewbordas/Desktop/handshake/Pods/Target\ Support\ Files/Parse/Parse-prefix.pch \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/ParseManager.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Headers/Private/Parse/PFConstants.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Headers/Private/Parse/PFNullability.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/PFDataProvider.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/LocalDataStore/OfflineStore/PFOfflineStore.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/PFMacros.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Headers/Private/Bolts/BFExecutor.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/BFTask+Private.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Headers/Private/Bolts/BFTask.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Headers/Private/Bolts/BFCancellationToken.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Headers/Private/Bolts/BFCancellationTokenRegistration.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Headers/Private/Bolts/BFDefines.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/PFInternalUtils.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/PFEncoder.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/Analytics/Controller/PFAnalyticsController.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/PFAssert.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/PFCommandCache.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/PFEventuallyQueue.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/PFNetworkCommand.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Headers/Private/Parse/PFConfig.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/PFCoreManager.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/PFCoreDataProvider.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/PFFileManager.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/Installation/InstallationIdentifierStore/PFInstallationIdentifierStore.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/KeyValueCache/PFKeyValueCache.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/PFKeychainStore.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/PFLogging.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/PFLogger.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/MultiProcessLock/PFMultiProcessFileLockController.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/PFPinningEventuallyQueue.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/Push/Manager/PFPushManager.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Headers/Private/Parse/PFUser.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Headers/Private/Parse/PFObject.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Headers/Private/Parse/PFACL.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Headers/Private/Parse/PFSubclassing.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/Commands/CommandRunner/URLSession/PFURLSessionCommandRunner.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/Commands/CommandRunner/PFCommandRunning.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Headers/Private/Parse/PFInstallation.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Parse/Parse/Internal/Purchase/Controller/PFPurchaseController.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Headers/Private/Parse/PFProduct.h \
+  /Users/matthewbordas/Desktop/handshake/Pods/Headers/Private/Parse/PFFile.h
