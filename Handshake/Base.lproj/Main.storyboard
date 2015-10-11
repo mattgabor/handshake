@@ -75,7 +75,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JR0-pA-Snk">
-                                <rect key="frame" x="20" y="420" width="560" height="30"/>
+                                <rect key="frame" x="20" y="370" width="560" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Begin"/>
                                 <connections>
@@ -83,7 +83,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8Ss-gb-pJ8">
-                                <rect key="frame" x="100" y="370" width="400" height="30"/>
+                                <rect key="frame" x="180" y="320" width="240" height="30"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="nSa-nB-96o"/>
@@ -97,12 +97,12 @@
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKV-Bl-QrN">
-                                <rect key="frame" x="155" y="50" width="290" height="290"/>
+                                <rect key="frame" x="180" y="50" width="240" height="240"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="290" id="2mU-rO-EVo"/>
+                                    <constraint firstAttribute="height" constant="240" id="2mU-rO-EVo"/>
                                     <constraint firstAttribute="height" constant="230" id="LtL-Px-Zln"/>
-                                    <constraint firstAttribute="width" constant="290" id="Mjd-2f-cjI"/>
+                                    <constraint firstAttribute="width" constant="240" id="Mjd-2f-cjI"/>
                                     <constraint firstAttribute="height" constant="149" id="nxB-4n-KEB"/>
                                 </constraints>
                                 <state key="normal" title="Choose Image">
@@ -129,7 +129,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JR0-pA-Snk" secondAttribute="bottom" constant="200" id="Ms1-uS-htt"/>
                             <constraint firstItem="KKV-Bl-QrN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PvR-WY-yFN"/>
                             <constraint firstItem="JR0-pA-Snk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="RTS-Nj-lVZ"/>
+                            <constraint firstItem="8Ss-gb-pJ8" firstAttribute="leading" secondItem="KKV-Bl-QrN" secondAttribute="leading" id="TRS-fr-tn1"/>
                             <constraint firstAttribute="trailing" secondItem="8Ss-gb-pJ8" secondAttribute="trailing" constant="100" id="UfG-Oo-OKF"/>
+                            <constraint firstItem="8Ss-gb-pJ8" firstAttribute="width" secondItem="KKV-Bl-QrN" secondAttribute="width" id="Uh1-cm-ggg"/>
                             <constraint firstAttribute="trailing" secondItem="KKV-Bl-QrN" secondAttribute="trailing" constant="20" id="dev-8d-nNS"/>
                             <constraint firstItem="8Ss-gb-pJ8" firstAttribute="top" secondItem="KKV-Bl-QrN" secondAttribute="bottom" constant="10" id="fOl-1L-2pk"/>
                             <constraint firstItem="8Ss-gb-pJ8" firstAttribute="top" secondItem="KKV-Bl-QrN" secondAttribute="bottom" constant="30" id="iuT-MJ-T84"/>
@@ -142,7 +144,9 @@
                                 <exclude reference="dev-8d-nNS"/>
                                 <exclude reference="jMH-Ef-6z1"/>
                                 <exclude reference="3D7-WZ-y9A"/>
+                                <exclude reference="UfG-Oo-OKF"/>
                                 <exclude reference="fOl-1L-2pk"/>
+                                <exclude reference="sFj-nf-eCo"/>
                                 <exclude reference="Ms1-uS-htt"/>
                             </mask>
                         </variation>
