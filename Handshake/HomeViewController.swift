@@ -54,11 +54,11 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
         // Set up this phone as an ibeacon
         phoneAsBeacon(0, minor: minor, identifier: "A handshake")
         
-        if (WCSession.isSupported()) {
-            let session = WCSession.defaultSession()
-            session.delegate = self // conforms to WCSessionDelegate
-            session.activateSession()
-        }
+//        if (WCSession.isSupported()) {
+//            let session = WCSession.defaultSession()
+//            session.delegate = self // conforms to WCSessionDelegate
+//            session.activateSession()
+//        }
     }
     
     override func viewWillAppear(animated: Bool)
@@ -224,9 +224,6 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
             //sendLocalNotificationWithMessage(message)
     }
     
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
-        
-    }
     
     func locationManager(manager: CLLocationManager,
         didEnterRegion region: CLRegion) {
@@ -264,6 +261,11 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
         }
     }
     
+    // MARK: - Message Passing/Receiving To Watch
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        
+    }
+    
     func sendShakerDataToWatch() {
         
         // check the reachablity
@@ -287,7 +289,6 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
         
         WCSession.defaultSession().sendMessage(
             message, replyHandler: { (replyMessage) -> Void in
-                //
             }) { (error) -> Void in
                 print(error)
         }
