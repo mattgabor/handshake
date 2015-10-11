@@ -38,12 +38,12 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-#pragma mark - reenable for real app, disabled for testing
-//    PFUser *currentUser = [PFUser currentUser];
-//
-//    if (currentUser) {
-//        [self performSegueWithIdentifier:@"LandingScreenToHome" sender:self];
-//    }
+
+    PFUser *currentUser = [PFUser currentUser];
+
+    if (currentUser) {
+        [self performSegueWithIdentifier:@"LandingScreenToHome" sender:self];
+    }
 }
 
 #pragma mark - Configure UI
