@@ -147,11 +147,11 @@
     // 65,536 is 2^16 for the max number of the 16 bit number field
     newUser[@"minor"] = [NSNumber numberWithInt: rand() % 65536];
     
-    NSData *fileAsData = UIImageJPEGRepresentation(self.image, 0.5)
+    NSData *fileAsData = UIImageJPEGRepresentation(self.image, 0.5);
     
-    PFFile *imageFile = [PFFile fileWithData:fileAsData!];
+    PFFile *imageFile = [PFFile fileWithData:fileAsData];
     
-    newUser["imageAsPFFile"] = imageFile;
+    newUser[@"imageAsPFFile"] = imageFile;
     
     // TODO: Check if name is already taken
     // Log in through Parse

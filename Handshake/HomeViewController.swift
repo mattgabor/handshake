@@ -177,6 +177,8 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
             //self.haveExitedRegion = true
             
             NSLog("You exited the region")
+            
+            // Send with the actual data
             sendLocalNotificationWithMessage("You exited the region")
     }
 
@@ -236,6 +238,8 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
             if  error == nil
             {
                 let shakerName = object!["name"] as! String
+                
+                print("Shaker's name is \(shakerName)")
                 let shakerPicURL = NSURL(string: (object!["imageAsPFFile"] as! PFFile).url!)
                     
                 let manager = SDWebImageManager.sharedManager()
@@ -247,6 +251,21 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
                     //let imageAsData = UIImageJPEGRepresentation(image!, 0.5)!
                     self.nameWithImageDictionary = ["name" : shakerName, "image" : image!]
                     self.haveFormattedDictionary = true
+//                    
+//                    let saveAction = UIMutableUserNotificationAction()
+//                    saveAction.identifier = "saveAlert"
+//                    saveAction.title = "Save"
+//                    
+//                    let messageReceivedCategory = UIMutableUserNotificationCategory()
+//                    messageReceivedCategory.identifier = "messageReceived"
+//                    messageReceivedCategory.setActions([saveAction], forContext: UIUserNotificationActionContext.Default)
+//                    
+//                    // We already do this in AppDelegate
+//                    let settings = UIUserNotificationSettings(forTypes: [.Alert], categories: [messageReceivedCategory])
+//                    
+//                    UIApplication.sharedApplication().registerUserNotificationSettings(settings)\
+                    
+                    
                     //let dictionaryConvertedToData = NSKeyedArchiver.archivedDataWithRootObject(nameWithImageDictionary)
                     //self.sendShakerDataToWatch(nameWithImageDictionary)
                 }

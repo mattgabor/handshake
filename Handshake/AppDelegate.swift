@@ -27,8 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         let settings = UIUserNotificationSettings(
             forTypes: [.Badge, .Sound, .Alert],
             categories: nil)
+        
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
-        //UIApplicatio
         
         if (WCSession.isSupported())
         {
