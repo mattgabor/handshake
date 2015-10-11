@@ -12,10 +12,17 @@ import Foundation
 
 class NotificationController: WKUserNotificationInterfaceController {
 
+    @IBOutlet var shakerName: WKInterfaceLabel!
+    @IBOutlet var shakerPic: WKInterfaceImage!
+    
+    
     override init() {
         // Initialize variables here.
         super.init()
         
+        shakerName.setText("Matt Bordas")
+        shakerPic.setImage(UIImage(named: "mattCrop"))
+
         // Configure interface objects here.
     }
 
@@ -28,7 +35,7 @@ class NotificationController: WKUserNotificationInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
+    
     /*
     override func didReceiveLocalNotification(localNotification: UILocalNotification, withCompletion completionHandler: ((WKUserNotificationInterfaceType) -> Void)) {
         // This method is called when a local notification needs to be presented.
