@@ -47,6 +47,10 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
         let minorNSNumber = currentUser["minor"] as! NSNumber
         let minor = UInt16(minorNSNumber.intValue)
         
+        
+        // Set up this phone to detect other beacons
+        detectOtherBeacons()
+        
         // Set up this phone as an ibeacon
         phoneAsBeacon(0, minor: minor, identifier: "A handshake")
         
@@ -129,12 +133,6 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
         print("peripheral manager is ready to update subscribers")
     }
     
-    func sendLocalNotificationWithMessage(message: String!) {
-        let notification:UILocalNotification = UILocalNotification()
-        notification.alertBody = message
-        UIApplication.sharedApplication().scheduleLocalNotification(notification)
-    }
-    
     func locationManager(manager: CLLocationManager,
         didRangeBeacons beacons: [CLBeacon],
         inRegion region: CLBeaconRegion) {
@@ -163,15 +161,16 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
                     
                 }
                 
-                var ids = [NSNumber]()
-                
-                for beacon: CLBeacon in beacons
-                {
-                    ids.append(beacon.minor)
-                }
+//                var ids = [NSNumber]()
+//                
+//                for beacon: CLBeacon in beacons
+//                {
+//                    ids.append(beacon.minor)
+//                }
                 
                 // FIXME: Only run following code if handshake detected
                 
+                /*
                 let query = PFQuery(className: "_User")
                 
                 query.whereKey("minor", containedIn: ids)
@@ -183,15 +182,17 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
                     {
                         for object in objects!
                         {
-                            let shakerName = object["minor"] as! String
-                            print("You are nearby \(shakerName)!!!")
+                            let shakerName = object["name"] as! String*/
+                            //print("You are nearby \(shakerName)!!!")
+                            //self.sendLocalNotificationWithMessage("You are nearby someone with minor: \(nearestBeacon.minor.intValue)!!!")
+                /*
                         }
                     }
                     else
                     {
                         print("Error querying for beacon minor with error: \(error!.description)")
                     }
-                }
+                }*/
                 
                 //                switch nearestBeacon.proximity {
                 //                case CLProximity.Far:
@@ -288,6 +289,15 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
             }) { (error) -> Void in
                 print(error)
         }
+    }
+    
+    // MARK: - Utils
+    
+    func sendLocalNotificationWithMessage(message: String!)
+    {
+        let notification:UILocalNotification = UILocalNotification()
+        notification.alertBody = message
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
 }
 

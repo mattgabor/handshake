@@ -18,18 +18,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
+        Parse.enableLocalDatastore()
+        
         Parse.setApplicationId("BZgVVYapIDNl3kVbOg0nY7UgHs8wfGGjGavd2zL6", clientKey: "qp6o8o0uoffnmEfkFFS3YLUexHEX9gNmmkpUDHq5")
         // Override point for customization after application launch.
+        
         
         let settings = UIUserNotificationSettings(
             forTypes: [.Badge, .Sound, .Alert],
             categories: nil)
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        //UIApplicatio
         
-        if (WCSession.isSupported()) {
+        if (WCSession.isSupported())
+        {
             let session = WCSession.defaultSession()
             session.delegate = self // conforms to WCSessionDelegate
             session.activateSession()
+        }
+        
+        if(application.respondsToSelector("registerUserNotificationSettings:")) {
+            application.registerUserNotificationSettings(
+                UIUserNotificationSettings(
+                    forTypes: [.Alert, .Sound],
+                    categories: nil)
+            )
         }
         
         return true
