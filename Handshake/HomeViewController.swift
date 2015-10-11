@@ -75,6 +75,7 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
     
     override func viewWillAppear(animated: Bool)
     {
+        (UIApplication.sharedApplication().delegate as! AppDelegate).homeVC = self
         // Dismiss progress view
         if KVNProgress.isVisible()
         {
@@ -147,11 +148,35 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
     
     func locationManager(manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion)
     {
-        if(beacons.count > 0) {
+        if(beacons.count > 0)
+        {
+            print("Found someone by you")
             nearestBeacon = beacons[0]
+            
+            switch nearestBeacon.proximity
+            {
+                case CLProximity.Immediate:
+                    print("Immediate range")
+                    //userLabel.text = "PERSON BY YOU IMMEDIATE!!"
+                case CLProximity.Near:
+                    print("Near you")
+                case CLProximity.Far:
+                    print("Far!!")
+                    if haveFormattedDictionary! == true
+                    {
+                        self.userLabel.text = "About to send local notification"
+                        // Send local notification, or send remote from parse
+                        let nameReminder = UILocalNotification()
+                        nameReminder.userInfo = nameWithImageDictionary
+                        UIApplication.sharedApplication().scheduleLocalNotification(nameReminder)
+                    }
+                default: break
+                
+            }
+            
         } else {
             // Reset
-            self.nearestBeacon = CLBeacon()
+            //self.nearestBeacon = CLBeacon()
         }
     }
     
@@ -171,15 +196,15 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
             manager.stopUpdatingLocation()
             
             // Send notification to phone now
-            self.sendShakerDataToWatch(self.nameWithImageDictionary)
+            //self.sendShakerDataToWatch(self.nameWithImageDictionary)
             
-            // Pray the query finishes in time
-            //self.haveExitedRegion = true
-            
-            NSLog("You exited the region")
-            
-            // Send with the actual data
-            sendLocalNotificationWithMessage("You exited the region")
+//            // Pray the query finishes in time
+//            //self.haveExitedRegion = true
+//            
+//            NSLog("You exited the region")
+//            
+//            // Send with the actual data
+//            sendLocalNotificationWithMessage("You exited the region")
     }
 
     // MARK: - CBPeripheralManagerDelegate Protocol
@@ -218,6 +243,8 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
             return
         }
         
+        print("Sending message to watch")
+        
         // Send this message to the watch
         WCSession.defaultSession().sendMessage(
             data, replyHandler: { (replyMessage) -> Void in
@@ -228,53 +255,7 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
     
     func queryParseForShaker()
     {
-        let query = PFQuery(className: "_User")
-        
-        query.whereKey("minor", equalTo: nearestBeacon.minor)
-        
-        query.getFirstObjectInBackgroundWithBlock
-        {
-            (object: PFObject?, error: NSError?) -> Void in
-            if  error == nil
-            {
-                let shakerName = object!["name"] as! String
-                
-                print("Shaker's name is \(shakerName)")
-                let shakerPicURL = NSURL(string: (object!["imageAsPFFile"] as! PFFile).url!)
-                    
-                let manager = SDWebImageManager.sharedManager()
-                
-                manager.downloadImageWithURL(shakerPicURL, options: [], progress: nil)
-                {
-                    (image: UIImage?, error: NSError?, cacheType: SDImageCacheType, finished: Bool, imageURL: NSURL?) -> Void in
-                    // --- Send data to watch once request completes ---
-                    //let imageAsData = UIImageJPEGRepresentation(image!, 0.5)!
-                    self.nameWithImageDictionary = ["name" : shakerName, "image" : image!]
-                    self.haveFormattedDictionary = true
-//                    
-//                    let saveAction = UIMutableUserNotificationAction()
-//                    saveAction.identifier = "saveAlert"
-//                    saveAction.title = "Save"
-//                    
-//                    let messageReceivedCategory = UIMutableUserNotificationCategory()
-//                    messageReceivedCategory.identifier = "messageReceived"
-//                    messageReceivedCategory.setActions([saveAction], forContext: UIUserNotificationActionContext.Default)
-//                    
-//                    // We already do this in AppDelegate
-//                    let settings = UIUserNotificationSettings(forTypes: [.Alert], categories: [messageReceivedCategory])
-//                    
-//                    UIApplication.sharedApplication().registerUserNotificationSettings(settings)\
-                    
-                    
-                    //let dictionaryConvertedToData = NSKeyedArchiver.archivedDataWithRootObject(nameWithImageDictionary)
-                    //self.sendShakerDataToWatch(nameWithImageDictionary)
-                }
-            }
-            else
-            {
-                print("Error query for minor value on line \(__LINE__) with error: \(error!.description)")
-            }
-        }
+        //print("Fuckk")
     }
     
     // MARK: - Utils

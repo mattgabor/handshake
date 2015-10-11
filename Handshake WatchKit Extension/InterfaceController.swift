@@ -22,8 +22,11 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         super.willActivate()
         
         // DO NOT RESET
+        
+        
         if (motionManager.accelerometerAvailable == true) {
             let handler:CMAccelerometerHandler = {(data: CMAccelerometerData?, error: NSError?) -> Void in
+                self.resetButton.setBackgroundColor(UIColor.clearColor())
                 let currentNumber = ((NSString(format: "%.5f", data!.acceleration.x)).doubleValue * 100)
                 if currentNumber < 10 && !self.pushSent {
                     // Send notification to watch to look up minor from Parse
@@ -73,6 +76,9 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     // Received message from iPhone
     func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        
+        let shakerName = message["name"]
+        
         print(__FUNCTION__)
         guard message["request"] as? String == "showAlert" else {return}
         
@@ -83,9 +89,9 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         let actions = [defaultAction]
         
         self.presentAlertControllerWithTitle(
-            "Corey Ching",
+            "\(shakerName)",
             message: "",
-            preferredStyle: WKAlertControllerStyle.Alert,
+            preferredStyle: WKAlertControllerStyle.SideBySideButtonsAlert,
             actions: actions)
     }
     
@@ -93,6 +99,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     @IBAction func reset()
     {
+        resetButton.setBackgroundColor(UIColor.redColor())
         self.pushSent = false
     }
 }
