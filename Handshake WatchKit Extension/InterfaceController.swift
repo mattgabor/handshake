@@ -9,24 +9,14 @@
 import WatchKit
 import Foundation
 import CoreMotion
+import WatchConnectivity
 
-
-class InterfaceController: WKInterfaceController {
+class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     let coreyMinor = 40769
     let motionManager = CMMotionManager()
     
-    @IBOutlet var shookLabel: WKInterfaceLabel!
-    
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
-        
-        
-        
-        motionManager.accelerometerUpdateInterval = 0.1
-        // Configure interface objects here.
-    }
-
+    // MARK: - Accelerometer Code
     override func willActivate() {
         super.willActivate()
         
@@ -34,8 +24,14 @@ class InterfaceController: WKInterfaceController {
             let handler:CMAccelerometerHandler = {(data: CMAccelerometerData?, error: NSError?) -> Void in
                 let currentNumber = ((NSString(format: "%.5f", data!.acceleration.x)).doubleValue * 100)
                 if currentNumber > 0 {
-                    self.shookLabel.setText("Shook")
-                    // Look up minor in DB and prepare to present notification
+                    // Send notification to watch to look up minor from Parse
+                    print("sending push notification to iPhone")
+                    let message = ["request": "fireLocalNotification"]
+                    WCSession.defaultSession().sendMessage(
+                        message, replyHandler: { (replyMessage) -> Void in
+                        }) { (error) -> Void in
+                            print(error.localizedDescription)
+                    }
                 }
             }
             motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.currentQueue()!, withHandler: handler)
@@ -51,6 +47,38 @@ class InterfaceController: WKInterfaceController {
         motionManager.stopAccelerometerUpdates()
     }
     
+    // MARK: - Message Passing Code
+    override func awakeWithContext(context: AnyObject?) {
+        super.awakeWithContext(context)
+        
+        // Activate the session on both sides to enable communication.
+        if (WCSession.isSupported()) {
+            let session = WCSession.defaultSession()
+            session.delegate = self // conforms to WCSessionDelegate
+            session.activateSession()
+        }
+        
+        motionManager.accelerometerUpdateInterval = 0.1
+        // Configure interface objects here.
+    }
+    
+    // Received message from iPhone
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        print(__FUNCTION__)
+        guard message["request"] as? String == "showAlert" else {return}
+        
+        let defaultAction = WKAlertAction(
+            title: "Save Contact",
+            style: WKAlertActionStyle.Default) { () -> Void in
+        }
+        let actions = [defaultAction]
+        
+        self.presentAlertControllerWithTitle(
+            "Corey Ching",
+            message: "",
+            preferredStyle: WKAlertControllerStyle.Alert,
+            actions: actions)
+    }
     func registerHandshake() {
         
     }

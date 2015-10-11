@@ -10,6 +10,7 @@ import UIKit
 import Parse
 import CoreBluetooth
 import KVNProgress
+import WatchConnectivity
 
 class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocationManagerDelegate
 {
@@ -40,16 +41,14 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
         // Should never be nil here
         let currentUser = PFUser.currentUser()!
         
-        userLabel.text = currentUser.username
+        userLabel.text = "Hey \(currentUser.username!)!\n\n Go meet some people 👫"
         
         // Get the minor value from the cached user
         let minorNSNumber = currentUser["minor"] as! NSNumber
         let minor = UInt16(minorNSNumber.intValue)
         
         // Set up this phone as an ibeacon
-        //phoneAsBeacon(0, minor: minor, identifier: "A handshake")
-        
-        detectOtherBeacons()
+        phoneAsBeacon(0, minor: minor, identifier: "A handshake")
     }
     
     override func viewWillAppear(animated: Bool)
@@ -251,7 +250,49 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
             self.peripheralManager!.stopAdvertising()
         }
     }
+    
+    func sendShakerDataToWatch() {
+        
+        // check the reachablity
+        if WCSession.defaultSession().reachable == false {
+            
+            let alert = UIAlertController(
+                title: "Failed to send",
+                message: "Apple Watch is not reachable.",
+                preferredStyle: UIAlertControllerStyle.Alert)
+            let okAction = UIAlertAction(
+                title: "OK",
+                style: UIAlertActionStyle.Cancel,
+                handler: nil)
+            alert.addAction(okAction)
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+            return
+        }
+        
+        let message = ["request": "showAlert"]
+        
+        WCSession.defaultSession().sendMessage(
+            message, replyHandler: { (replyMessage) -> Void in
+                //
+            }) { (error) -> Void in
+                print(error)
+        }
+    }
+}
+
+class Shaker: NSObject {
+    
+    let shakerName: String
+    let shakerPicture: UIImage
+    
+    init(shakerName: String, shakerPicture: UIImage) {
+        self.shakerName = shakerName
+        self.shakerPicture = shakerPicture
+    }
+}
+
 
     
-}
+
 
