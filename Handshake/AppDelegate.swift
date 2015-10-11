@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import WatchConnectivity
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -43,7 +44,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    func sessionWatchStateDidChange(session: WCSession) {
+        print(__FUNCTION__)
+        print(session)
+        print("reachable:\(session.reachable)")
+    }
+    
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        print(__FUNCTION__)
+        guard message["request"] as? String == "fireLocalNotification" else {return}
+        
+        let localNotification = UILocalNotification()
+        localNotification.alertBody = "Message Received!"
+        localNotification.fireDate = NSDate()
+        localNotification.soundName = UILocalNotificationDefaultSoundName;
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+    }
 
 }
 

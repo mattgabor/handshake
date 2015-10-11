@@ -39,12 +39,12 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+#pragma mark - reenable for real app, disabled for testing
+    PFUser *currentUser = [PFUser currentUser];
 
-//    PFUser *currentUser = [PFUser currentUser];
-//
-//    if (currentUser) {
-//        [self performSegueWithIdentifier:@"landingScreenToHome" sender:self];
-//    }
+    if (currentUser) {
+        [self performSegueWithIdentifier:@"LandingScreenToHome" sender:self];
+    }
 }
 
 #pragma mark - Configure UI
@@ -120,7 +120,7 @@
          {
              //[SVProgressHUD showSuccessWithStatus:@"Welcome"];
              [KVNProgress showSuccess];
-             [self performSegueWithIdentifier:@"SignInUser" sender:self];
+             [self performSegueWithIdentifier:@"LandingScreenToHome" sender:self];
          }
          else
          {
@@ -152,6 +152,7 @@
 
 - (void)alert:(NSString *)msg
 {
+#pragma mark - Shai fix this (http://nshipster.com/uialertcontroller/)
     [[[UIAlertView alloc] initWithTitle:@"Sign Up"
                                 message:msg
                                delegate:nil

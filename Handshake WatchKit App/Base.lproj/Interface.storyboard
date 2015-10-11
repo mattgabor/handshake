@@ -10,17 +10,11 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Handshake_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="center" text="No Shake" textAlignment="center" numberOfLines="0" id="BLX-lf-MGE" userLabel="I"/>
-                        <imageView width="117" height="117" alignment="center" verticalAlignment="center" image="watchLanding" id="Z7E-nu-Gv6">
-                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </imageView>
+                        <imageView width="110" height="110" alignment="center" verticalAlignment="center" image="Landing" id="Jca-tk-dNR"/>
                     </items>
-                    <connections>
-                        <outlet property="shookLabel" destination="BLX-lf-MGE" id="4A9-lc-c3e"/>
-                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="341"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
