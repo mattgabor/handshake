@@ -14,8 +14,8 @@ import WatchConnectivity
 class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     var window: UIWindow?
-
-
+    var homeVC = HomeViewController()
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
         Parse.enableLocalDatastore()
@@ -27,8 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         let settings = UIUserNotificationSettings(
             forTypes: [.Badge, .Sound, .Alert],
             categories: nil)
+        
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
-        //UIApplicatio
         
         if (WCSession.isSupported())
         {
@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         
         return true
     }
-
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -76,19 +76,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         print("reachable:\(session.reachable)")
     }
     
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
-        /// REPLACE THIS WITH YO PARSE CODEZ MOTHA LICKA
-        
-        print(__FUNCTION__)
-        guard message["request"] as? String == "fireLocalNotification" else {return}
-        
-        let localNotification = UILocalNotification()
-        localNotification.alertBody = "Handshake Executed"
-        localNotification.fireDate = NSDate()
-        localNotification.soundName = UILocalNotificationDefaultSoundName;
-        
-        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
-
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void)
+    {
+        // Tell the home view controller to query for the data
+        self.homeVC.queryParseForShaker()
     }
 
 }

@@ -11,13 +11,16 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Handshake_WatchKit_App" customModuleProvider="target">
                     <items>
                         <imageView width="110" height="110" alignment="center" verticalAlignment="center" image="Landing" id="Jca-tk-dNR"/>
-                        <button width="38" height="24.5" alignment="right" verticalAlignment="bottom" id="amX-Ae-yET">
+                        <button width="54" height="24.5" alignment="right" verticalAlignment="bottom" title="Reset" id="amX-Ae-yET">
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="reset" destination="AgC-eL-Hgc" id="68s-gD-xme"/>
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="resetButton" destination="amX-Ae-yET" id="Qwh-rm-JKP"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="338"/>
@@ -28,7 +31,6 @@
                 <notificationController id="YCC-NB-fut">
                     <items>
                         <label alignment="center" text="Shaker's Name" textAlignment="center" id="IdU-wH-bcW"/>
-                        <imageView alignment="left" id="sbl-sQ-Iuu"/>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
@@ -60,26 +62,16 @@
             <objects>
                 <controller identifier="Alert" hidesWhenLoading="NO" id="fG4-mI-o2w" customClass="AlertInterfaceController" customModule="watchOS2Sampler_WatchKit_Extension">
                     <items>
-                        <button width="1" alignment="left" title="Alert" id="mBv-d5-2qh">
-                            <connections>
-                                <action selector="alertBtnTapped" destination="fG4-mI-o2w" id="H1e-79-4Lw"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="SideBySideButtonsAlert" id="Pib-DF-oM3">
-                            <fontDescription key="font" type="system" pointSize="13"/>
-                            <connections>
-                                <action selector="sidebysideBtnTapped" destination="fG4-mI-o2w" id="9Rz-gv-xfz"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="ActionSheet" id="4zN-dv-hkU">
-                            <connections>
-                                <action selector="actionSheetBtnTapped" destination="fG4-mI-o2w" id="zeL-Hl-eQV"/>
-                            </connections>
-                        </button>
+                        <label alignment="center" text="Shaker's Name" textAlignment="center" id="Inc-Go-qxi"/>
+                        <imageView alignment="left" id="sbl-sQ-Iuu"/>
                     </items>
+                    <connections>
+                        <outlet property="shakerImage" destination="sbl-sQ-Iuu" id="pgA-vZ-yWI"/>
+                        <outlet property="shakerName" destination="Inc-Go-qxi" id="UsJ-m9-Gsr"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="873"/>
+            <point key="canvasLocation" x="468" y="643"/>
         </scene>
     </scenes>
 </document>

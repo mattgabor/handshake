@@ -3,17 +3,22 @@ PODS:
   - KVNProgress (2.2.1)
   - Parse (1.9.0):
     - Bolts/Tasks (>= 1.3.0)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
   - SVProgressHUD (1.1.3)
 
 DEPENDENCIES:
   - KVNProgress
   - Parse
+  - SDWebImage (~> 3.7)
   - SVProgressHUD
 
 SPEC CHECKSUMS:
   Bolts: 805a4a87413e49d4a0c2b7d469084cbc46b09342
   KVNProgress: 7001d2d16a2755cee5599e8e485befe056f2197b
   Parse: 712efbc476d4f47b0f96b70db7e53101575753aa
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
 
 COCOAPODS: 0.39.0

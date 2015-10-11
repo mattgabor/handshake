@@ -11,6 +11,7 @@ import Parse
 import CoreBluetooth
 import KVNProgress
 import WatchConnectivity
+import SDWebImage
 
 class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocationManagerDelegate, WCSessionDelegate
 {
@@ -28,7 +29,14 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
     var lastProximity: CLProximity?
     // Payload of data the phone emits as a beacon
     var beaconPeripheralData: NSDictionary?
-
+    // The person who's hand you just Suge Night
+    var nearestBeacon: CLBeacon!
+    // The dictionary containing the user's info who you just shook hands with
+    var nameWithImageDictionary: [String:AnyObject]!
+    // A boolean that will notify you if the dictionary has been filled
+    var haveFormattedDictionary: Bool!
+    // A boolean that will notify you if you have exited the region
+    var haveExitedRegion: Bool!
     
     // MARK: - Lifecycle Methods
     
@@ -37,6 +45,10 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        haveFormattedDictionary = false
+        haveExitedRegion = false
+        
+        (UIApplication.sharedApplication().delegate as! AppDelegate).homeVC = self
         
         // Should never be nil here
         let currentUser = PFUser.currentUser()!
@@ -133,95 +145,14 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
         print("peripheral manager is ready to update subscribers")
     }
     
-    func locationManager(manager: CLLocationManager,
-        didRangeBeacons beacons: [CLBeacon],
-        inRegion region: CLBeaconRegion) {
-            //NSLog("didRangeBeacons");
-            //var message:String = ""
-            
-            print("Beacons count: \(beacons.count)")
-            
-            if(beacons.count > 0)
-            {
-                // Pass beacons to home screen
-                self.peopleNearby = beacons
-                
-                let nearestBeacon:CLBeacon = beacons[0]
-                
-                if(nearestBeacon.proximity == lastProximity ||
-                    nearestBeacon.proximity == CLProximity.Unknown)
-                {
-                    return;
-                }
-                
-                lastProximity = nearestBeacon.proximity;
-                
-                if nearestBeacon.proximity == CLProximity.Immediate
-                {
-                    
-                }
-                
-//                var ids = [NSNumber]()
-//                
-//                for beacon: CLBeacon in beacons
-//                {
-//                    ids.append(beacon.minor)
-//                }
-                
-                // FIXME: Only run following code if handshake detected
-                
-                /*
-                let query = PFQuery(className: "_User")
-                
-                query.whereKey("minor", containedIn: ids)
-                
-                query.findObjectsInBackgroundWithBlock
-                {
-                    (objects: [PFObject]?, error: NSError?) -> Void in
-                    if  error == nil
-                    {
-                        for object in objects!
-                        {
-                            let shakerName = object["name"] as! String*/
-                            //print("You are nearby \(shakerName)!!!")
-                            //self.sendLocalNotificationWithMessage("You are nearby someone with minor: \(nearestBeacon.minor.intValue)!!!")
-                /*
-                        }
-                    }
-                    else
-                    {
-                        print("Error querying for beacon minor with error: \(error!.description)")
-                    }
-                }*/
-                
-                //                switch nearestBeacon.proximity {
-                //                case CLProximity.Far:
-                //                    message = "You are far away from the beacon"
-                //                case CLProximity.Near:
-                //                    message = "You are near the beacon"
-                //                case CLProximity.Immediate:
-                //                    message = "You are within range to P.I.N.G."}
-                //case CLProximity.Unknown:
-                //  return
-                
-                //            } else {
-                //                message = "No beacons are nearby"
-            }
-            else
-            {
-                // Stop glowing of the beacon button, need to check if animation exists before??
-                //                if beaconsButton.layer.animationKeys().count > 0
-                //                {
-                //                    beaconsButton.layer.removeAllAnimations()
-                //
-                //                }
-                // Clear array
-                self.peopleNearby = []
-                //message = "No beacons nearby"
-            }
-            
-            //NSLog("%@", message)
-            //sendLocalNotificationWithMessage(message)
+    func locationManager(manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion)
+    {
+        if(beacons.count > 0) {
+            nearestBeacon = beacons[0]
+        } else {
+            // Reset
+            self.nearestBeacon = CLBeacon()
+        }
     }
     
     
@@ -240,10 +171,15 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
             manager.stopUpdatingLocation()
             
             // Send notification to phone now
+            self.sendShakerDataToWatch(self.nameWithImageDictionary)
             
+            // Pray the query finishes in time
+            //self.haveExitedRegion = true
             
-            // NSLog("You exited the region")
-            // sendLocalNotificationWithMessage("You exited the region")
+            NSLog("You exited the region")
+            
+            // Send with the actual data
+            sendLocalNotificationWithMessage("You exited the region")
     }
 
     // MARK: - CBPeripheralManagerDelegate Protocol
@@ -263,7 +199,7 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
     
     // MARK: - Message Passing/Receiving To Watch
     
-    func sendShakerDataToWatch() {
+    func sendShakerDataToWatch(data: [String:AnyObject]) {
         
         // check the reachablity
         if WCSession.defaultSession().reachable == false {
@@ -282,12 +218,62 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
             return
         }
         
-        let message = ["request": "showAlert"]
-        
+        // Send this message to the watch
         WCSession.defaultSession().sendMessage(
-            message, replyHandler: { (replyMessage) -> Void in
+            data, replyHandler: { (replyMessage) -> Void in
             }) { (error) -> Void in
                 print(error)
+        }
+    }
+    
+    func queryParseForShaker()
+    {
+        let query = PFQuery(className: "_User")
+        
+        query.whereKey("minor", equalTo: nearestBeacon.minor)
+        
+        query.getFirstObjectInBackgroundWithBlock
+        {
+            (object: PFObject?, error: NSError?) -> Void in
+            if  error == nil
+            {
+                let shakerName = object!["name"] as! String
+                
+                print("Shaker's name is \(shakerName)")
+                let shakerPicURL = NSURL(string: (object!["imageAsPFFile"] as! PFFile).url!)
+                    
+                let manager = SDWebImageManager.sharedManager()
+                
+                manager.downloadImageWithURL(shakerPicURL, options: [], progress: nil)
+                {
+                    (image: UIImage?, error: NSError?, cacheType: SDImageCacheType, finished: Bool, imageURL: NSURL?) -> Void in
+                    // --- Send data to watch once request completes ---
+                    //let imageAsData = UIImageJPEGRepresentation(image!, 0.5)!
+                    self.nameWithImageDictionary = ["name" : shakerName, "image" : image!]
+                    self.haveFormattedDictionary = true
+//                    
+//                    let saveAction = UIMutableUserNotificationAction()
+//                    saveAction.identifier = "saveAlert"
+//                    saveAction.title = "Save"
+//                    
+//                    let messageReceivedCategory = UIMutableUserNotificationCategory()
+//                    messageReceivedCategory.identifier = "messageReceived"
+//                    messageReceivedCategory.setActions([saveAction], forContext: UIUserNotificationActionContext.Default)
+//                    
+//                    // We already do this in AppDelegate
+//                    let settings = UIUserNotificationSettings(forTypes: [.Alert], categories: [messageReceivedCategory])
+//                    
+//                    UIApplication.sharedApplication().registerUserNotificationSettings(settings)\
+                    
+                    
+                    //let dictionaryConvertedToData = NSKeyedArchiver.archivedDataWithRootObject(nameWithImageDictionary)
+                    //self.sendShakerDataToWatch(nameWithImageDictionary)
+                }
+            }
+            else
+            {
+                print("Error query for minor value on line \(__LINE__) with error: \(error!.description)")
+            }
         }
     }
     
@@ -299,20 +285,5 @@ class HomeViewController: UIViewController, CBPeripheralManagerDelegate, CLLocat
         notification.alertBody = message
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
+
 }
-
-class Shaker: NSObject {
-    
-    let shakerName: String
-    let shakerPicture: UIImage
-    
-    init(shakerName: String, shakerPicture: UIImage) {
-        self.shakerName = shakerName
-        self.shakerPicture = shakerPicture
-    }
-}
-
-
-    
-
-

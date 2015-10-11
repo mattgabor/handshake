@@ -87,11 +87,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Handshake/Bolts.framework"
   install_framework "Pods-Handshake/KVNProgress.framework"
   install_framework "Pods-Handshake/Parse.framework"
+  install_framework "Pods-Handshake/SDWebImage.framework"
   install_framework "Pods-Handshake/SVProgressHUD.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Handshake/Bolts.framework"
   install_framework "Pods-Handshake/KVNProgress.framework"
   install_framework "Pods-Handshake/Parse.framework"
+  install_framework "Pods-Handshake/SDWebImage.framework"
   install_framework "Pods-Handshake/SVProgressHUD.framework"
 fi
